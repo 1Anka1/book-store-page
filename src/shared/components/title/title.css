@@ -1,0 +1,10 @@
+.title {
+  font-family: 'Cardo', serif;
+  color: var(--secondary-color);
+  margin: 0 0 15px;
+  font-size: 45px;
+}
+
+.title--light {
+  color: #fff;
+}
