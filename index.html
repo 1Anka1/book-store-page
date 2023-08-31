@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pages</title>
-    <link rel="stylesheet" href="./assets/libs/normalize.css" />
-    <link rel="stylesheet" href="./src/assets/styles/global.css" />
-    <link rel="stylesheet" href="./src/assets/styles/variables.css" />
-    <link rel="stylesheet" href="./src/pages/home/ui/banner/banner.css" />
-    <link
-      rel="stylesheet"
-      href="./src/pages/home/ui/author-book/author-book.css"
-    />
-    <link rel="stylesheet" href="./src/pages/home/ui/about/about.css" />
-    <link rel="stylesheet" href="./src/shared/components/title/title.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1 class="title title--light">Hello</h1>
-      </div>
-    </header>
-    <section class="home-banner-section">
-      <div class="container">123</div>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pages</title>
+
+  <link rel="stylesheet" href="./assets/libs/normalize.css" />
+  <link rel="stylesheet" href="./src/assets/styles/global.css" />
+  <link rel="stylesheet" href="./src/assets/styles/variables.css" />
+  <link rel="stylesheet" href="./src/shared/components/title/title.css" />
+  <link rel="stylesheet" href="./src/shared/components/button/button.css">
+  <!-- PAGES - START SECTION OF THE HOME PAGE -->
+
+  <link rel="stylesheet" href="./src/pages/home/ui/banner/banner.css" />
+  <link rel="stylesheet" href="./src/pages/home/ui/author-book/author-book.css" />
+  <link rel="stylesheet" href="./src/pages/home/ui/about/about.css" />
+  <link rel="stylesheet" href="./src/pages/home/ui/trusted-by/trusted-by.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/blog/blog.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/callout/callout.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/chapter/chapter.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/footer/footer.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/learn-content/learn-content.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/subscription/subscription.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/testimonial/testimonial.css">
+  <link rel="stylesheet" href="./src/pages/home/ui/header/header.css">
+
+  <!-- PAGES - END SECTION OF THE HOME PAGE -->
+</head>
+
+<body>
+  <header>
+    <div class="container header-container">
+      <ul class="header-container-list">
+        <li>
+          <svg class="logo-icon" width="25" height="28">
+            <use href="./public/sprite.svg#page"></use>
+          </svg>
+        </li>
+        <h1 class="header-container-title">Pages</h1>
+      </ul>
+      <ul class="header-social-network-list">
+        <li><a class="social-network-link" href="#">
+            <svg class="social-network-icon" Width="18" Height="18">
+              <use href="./public/sprite.svg#facebook"></use>
+            </svg>
+          </a></li>
+        <li><a class="social-network-link" href="#">
+            <svg class="social-network-icon" Width="18" Height="18">
+              <use href="./public/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+        <li><a class="social-network-link" href="#">
+            <svg class="social-network-icon" Width="18" Height="18">
+              <use href="./public/sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a class="nav-list-link" href="#">Home</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#">Pages</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#">About</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#">Services</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="#">Contact</a></li>
+          <li class="nav-list-item">
+            <a href="#">
+              <svg class="basket-icon" Width="18" Height="17">
+                <use href="./public/sprite.svg#basket"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header-btn-order">Order today</button>
+    </div>
+  </header>
+  <section class="home-banner-section">
+    <div class="container"></div>
+  </section>
+</body>
+
 </html>
