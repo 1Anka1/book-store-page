@@ -22,14 +22,12 @@ header {
   color: #fff;
   font-size: 23px;
 }
+
 /* SOCIAL ICONS */
 .header-social-network-list {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.header-social-network-list > li {
-  background-color: #fff;
 }
 .header-social-network-list > li:not(:last-child) {
   margin-right: 10px;
@@ -40,12 +38,19 @@ header {
   align-items: center;
   width: 45px;
   height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
+}
+.social-network-link:hover {
+  background-color: var(--primary-color);
 }
 .social-network-icon {
   fill: var(--secondary-color);
 }
 
-/* NAVIGATION */
+/* NAVIGATION PAGES*/
+
 nav {
   margin-left: auto;
 }
@@ -56,4 +61,11 @@ nav {
 .nav-list-link {
   font-size: 17px;
   line-height: 22px;
+  transition: color 250ms var(--timing-function);
+}
+.nav-list-link:hover {
+  color: var(--primary-color);
+}
+.basket-icon {
+  margin-right: 30px;
 }

@@ -1,4 +1,78 @@
+/* START BANNER SECTION*/
 .home-banner-section {
   background-color: var(--secondary-color);
-  /* padding: 20px; */
+  padding: 50px 0px;
 }
+.banner-wrapper {
+  display: flex;
+}
+
+/* START BANNER IMFORMATION ABOUT BOOK*/
+.banner-book-information {
+  max-width: 600px;
+  margin: auto 90px auto 0px;
+  color: var(--primary-text-color);
+}
+.banner-welcome {
+  display: flex;
+  align-items: center;
+  font: 400 italic 24px/1.5 "Cardo";
+  margin-bottom: 15px;
+}
+.banner-welcome::before {
+  background: var(--primary-color);
+  content: "";
+  display: block;
+  width: 34px;
+  height: 1px;
+  margin-right: 10px;
+}
+.banner-title {
+  font: 700 65px/1.2 "Cardo";
+  letter-spacing: -0.02em;
+  margin-bottom: 35px;
+}
+.banner-book-description {
+  color: #b4c7e7;
+  letter-spacing: -0.01em;
+  margin-bottom: 35px;
+}
+.bnt-banner {
+  margin: 0px 30px 30px 0px;
+}
+.banner-read-link {
+  font: 700 19px/1.5 "Cardo";
+  border-bottom: 1px solid var(--primary-text-color);
+  transition: color 250ms var(--timing-function);
+}
+.banner-read-link:hover {
+  color: var(--primary-color);
+}
+.banner-book-list {
+  display: flex;
+  gap: 70px;
+}
+.banner-book-list > li {
+  display: flex;
+  align-items: first baseline;
+}
+.banner-book-list > li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+/* .banner-book-details {
+  color: red;
+} */
+/* END BANNER IMFORMATION ABOUT BOOK*/
+
+/* START BANNER FRONT PAGE BOOK*/
+.banner-book-img {
+  border: 8px solid var(--border-color-card);
+}
+/* END BANNER FRONT PAGE BOOK*/
+
+/* END BANNER SECTION*/
