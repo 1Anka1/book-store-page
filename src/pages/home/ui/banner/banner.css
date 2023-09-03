@@ -1,25 +1,24 @@
 /* START BANNER SECTION*/
-.home-banner-section {
+.home-banner_section {
   background-color: var(--secondary-color);
   padding: 50px 0px;
 }
-.banner-wrapper {
+.home-banner_wrapper {
   display: flex;
 }
-
 /* START BANNER IMFORMATION ABOUT BOOK*/
-.banner-book-information {
+.home-banner_book-information {
   max-width: 600px;
   margin: auto 90px auto 0px;
   color: var(--primary-text-color);
 }
-.banner-welcome {
+.home-banner_welcome {
   display: flex;
   align-items: center;
   font: 400 italic 24px/1.5 "Cardo";
   margin-bottom: 15px;
 }
-.banner-welcome::before {
+.home-banner_welcome::before {
   background: var(--primary-color);
   content: "";
   display: block;
@@ -27,12 +26,12 @@
   height: 1px;
   margin-right: 10px;
 }
-.banner-title {
+.home-banner_title {
   font: 700 65px/1.2 "Cardo";
   letter-spacing: -0.02em;
   margin-bottom: 35px;
 }
-.banner-book-description {
+.home-banner_book-description {
   color: #b4c7e7;
   letter-spacing: -0.01em;
   margin-bottom: 35px;
@@ -40,23 +39,23 @@
 .bnt-banner {
   margin: 0px 30px 30px 0px;
 }
-.banner-read-link {
+.home-banner_read-link {
   font: 700 19px/1.5 "Cardo";
   border-bottom: 1px solid var(--primary-text-color);
   transition: color 250ms var(--timing-function);
 }
-.banner-read-link:hover {
+.home-banner_read-link:hover {
   color: var(--primary-color);
 }
-.banner-book-list {
+.home-banner_book-list {
   display: flex;
   gap: 70px;
 }
-.banner-book-list > li {
+.home-banner_book-list > li {
   display: flex;
   align-items: first baseline;
 }
-.banner-book-list > li::before {
+.home-banner_book-list > li::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -64,19 +63,16 @@
   background-color: var(--primary-color);
   border-radius: 50%;
 }
-/* .banner-book-details {
-  color: red;
-} */
+
 /* END BANNER IMFORMATION ABOUT BOOK*/
 
 /* START BANNER FRONT PAGE BOOK*/
-
-.banner-book-img {
+.home-banner_book-img {
   border: 8px solid var(--border-color-card);
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 250ms var(--timing-function);
 }
-.banner-book-img:hover {
+.home-banner_book-img:hover {
   opacity: 1;
 }
 /* END BANNER FRONT PAGE BOOK*/

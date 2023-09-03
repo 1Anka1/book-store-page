@@ -1,4 +1,4 @@
-const img = document.querySelector(".banner-book-img");
+const img = document.querySelector(".home-banner_book-img");
 const initialImagePath = img.src;
 
 img.addEventListener("mouseover", () => {
