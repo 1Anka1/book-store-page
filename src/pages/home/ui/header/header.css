@@ -59,6 +59,7 @@ nav {
   column-gap: 30px;
 }
 .nav-list-link {
+  color: #fff;
   font-size: 17px;
   line-height: 22px;
   transition: color 250ms var(--timing-function);

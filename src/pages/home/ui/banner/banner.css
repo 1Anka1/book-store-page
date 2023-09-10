@@ -39,6 +39,7 @@
 
 .home-banner_read-link {
   font: 700 19px/1.5 "Cardo";
+  color:#fff;
   border-bottom: 1px solid var(--primary-text-color);
   transition: color 250ms var(--timing-function);
 }

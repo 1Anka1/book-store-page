@@ -1,5 +1,5 @@
 .title {
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   color: var(--secondary-color);
   margin: 0 0 15px;
   font-size: 45px;
@@ -7,4 +7,12 @@
 
 .title--light {
   color: #fff;
+}
+.title::after {
+  background: var(--primary-color);
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin-bottom: 15px;
 }
