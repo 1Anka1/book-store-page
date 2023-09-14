@@ -1,0 +1,9 @@
+.testimonial {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__block {
+  display: flex;
+  flex-direction: column;
+}

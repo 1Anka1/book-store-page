@@ -1,10 +1,10 @@
 /* HEADER LOGO*/
-.logo-icon {
+.header__logo-icon {
   fill: var(--primary-color);
   margin-right: 10px;
 }
 /* HEADER */
-header {
+.header {
   background-color: var(--secondary-color);
 }
 .header-container {
@@ -51,7 +51,7 @@ header {
 
 /* NAVIGATION PAGES*/
 
-nav {
+.navigation {
   margin-left: auto;
 }
 .nav-list {

@@ -1,10 +1,10 @@
 :root {
   --primary-color: #ffca42;
+  --secondary-font: 'Cardo';
   --secondary-color: #1b3764;
+  --light-color: #b4c7e7;
   --body-color: #969aa0;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --border-color-card: #dbe1e9;
   --primary-text-color: #fff;
-  --description-text-color: #969AA0;
-
 }

@@ -1,174 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pages</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pages</title>
+    <link rel="stylesheet" href="./public/libs/normalize.css" />
+    <link rel="stylesheet" href="./src/assets/styles/global.css" />
+    <link rel="stylesheet" href="./src/assets/styles/variables.css" />
+    <link rel="stylesheet" href="./src/shared/components/title/title.css" />
+    <link rel="stylesheet" href="./src/shared/components/button/button.css" />
+    <!-- PAGES - START SECTION OF THE HOME PAGE -->
 
-  <link rel="stylesheet" href="./assets/libs/normalize.css" />
-  <link rel="stylesheet" href="./src/assets/styles/global.css" />
-  <link rel="stylesheet" href="./src/assets/styles/variables.css" />
-  <link rel="stylesheet" href="./src/shared/components/title/title.css" />
-  <link rel="stylesheet" href="./src/shared/components/button/button.css">
-  <!-- PAGES - START SECTION OF THE HOME PAGE -->
+    <link rel="stylesheet" href="./src/pages/home/ui/banner/banner.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/author-book/author-book.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/about-writer/about-writer.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/trusted-by/trusted-by.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/blog/blog.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/callout/callout.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/chapter/chapter.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/footer/footer.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/learn-content/learn-content.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/subscription/subscription.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/testimonial/testimonial.css" />
+    <link rel="stylesheet" href="./src/pages/home/ui/header/header.css" />
 
-  <link rel="stylesheet" href="./src/pages/home/ui/banner/banner.css" />
-  <link rel="stylesheet" href="./src/pages/home/ui/author-book/author-book.css" />
-  <link rel="stylesheet" href="./src/pages/home/ui/about-writer/about-writen.css" />
-  <link rel="stylesheet" href="./src/pages/home/ui/trusted-by/trusted-by.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/blog/blog.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/callout/callout.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/chapter/chapter.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/footer/footer.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/learn-content/learn-content.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/subscription/subscription.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/testimonial/testimonial.css">
-  <link rel="stylesheet" href="./src/pages/home/ui/header/header.css">
+    <!-- PAGES - END SECTION OF THE HOME PAGE -->
+  </head>
 
-  <!-- PAGES - END SECTION OF THE HOME PAGE -->
-</head>
-
-<body>
-  <!-- START HEADER -->
-  <header>
-    <div class="container header-container">
-      <ul class="header-container-list">
-        <li>
-          <svg class="logo-icon" width="25" height="28">
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-container-list">
+          <svg class="header__logo-icon" width="25" height="28">
             <use href="./public/sprite.svg#page"></use>
           </svg>
-        </li>
-        <h1 class="header-container-title">Pages</h1>
-      </ul>
-      <ul class="header-social-network-list">
-        <li><a class="social-network-link" href="#">
-            <svg class="social-network-icon" Width="18" Height="18">
-              <use href="./public/sprite.svg#facebook"></use>
-            </svg>
-          </a></li>
-        <li><a class="social-network-link" href="#">
-            <svg class="social-network-icon" Width="18" Height="18">
-              <use href="./public/sprite.svg#twitter"></use>
-            </svg>
-          </a></li>
-        <li><a class="social-network-link" href="#">
-            <svg class="social-network-icon" Width="18" Height="18">
-              <use href="./public/sprite.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Home</a></li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Pages</a></li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">About</a></li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Services</a></li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Contact</a></li>
-          <li class="nav-list-item">
-            <a href="#">
-              <svg class="basket-icon" Width="18" Height="17">
-                <use href="./public/sprite.svg#basket"></use>
+          <h1 class="header-container-title">Pages</h1>
+        </div>
+        <ul class="header-social-network-list">
+          <li>
+            <a class="social-network-link" href="#">
+              <svg class="social-network-icon" Width="18" Height="18">
+                <use href="./public/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link" href="#">
+              <svg class="social-network-icon" Width="18" Height="18">
+                <use href="./public/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link" href="#">
+              <svg class="social-network-icon" Width="18" Height="18">
+                <use href="./public/sprite.svg#linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
-      </nav>
-      <button type="button" class="btn-order">Order today</button>
-    </div>
-  </header>
-  <!-- END HEADER -->
-
-  <!-- START HOME BANNER PAGE -->
-  <section class="home-banner_section">
-    <div class="home-banner_wrapper container">
-      <div class="home-banner_book-information">
-        <p class="home-banner_welcome">Welcome to Pages</p>
-        <h2 class="home-banner_title">Books are uniquely portable magic</h2>
-        <p class="home-banner_book-description">There are many variations of passages of Lorem Ipsum available, but the
-          majority have suffered alteration in
-          some form.</p>
-        <button type="button" class="bnt-banner btn-order">Order today</button>
-        <a class="home-banner_read-link" href="#">Read Free Demo</a>
-        <ul class="home-banner_book-list">
-          <li>Pages: <br>586 pages </li>
-          <li>Length: <br>10 Hours </li>
-          <li>Rating: <br>4.5/5 (305 ratings) </li>
-        </ul>
-      </div>
-      <div>
-        <a href="https://www.goodreads.com/book/show/1351129.The_Dark_Light_Years" target="_blank"><img
-            class="home-banner_book-img" src="./public/img/dark-front-page.png" alt="Front book page"></a>
-      </div>
-    </div>
-  </section>
-  <!-- END HOME BANNER PAGE -->
-
-  <!-- START ABOUT BOOK PAGE -->
-  <section class="home-author-book_section">
-    <div class="home-author-book_wrapper container">
-      <h2 class="home-author-book_title title">Author’s Book Includes</h2>
-      <ul class="home-author-book_list">
-        <li class="home-author-book_item">
-          <img src="./public/img/atomic-one-book.png" alt="Atomic One's Book Title" width="300" height="400">
-          <div class="home-author-book_item-information">
-            <h3 class="home-author-book_book-title">Atomic One’s</h3>
-            <p class="home-author-book_book-describe">Many variations of passages of Lorem Ipsum willing araise
-              alteration in some form.</p>
-            <ul class="home-author-book_list-details">
-              <li class="home-author-item-details">Pages: <br>586 pages </li>
-              <li class="home-author-item-details">Length: <br>10 Hours </li>
-            </ul>
-            <button type="button" class="home-author_bnt btn-order">Order today</button>
-          </div>
-        </li>
-        <li class="home-author-book_item">
-          <img src="./public/img/light-front-page.png" alt="The Dark Light Title" width="300" height="400">
-          <div class="home-author-book_item-information">
-            <h3 class="home-author-book_book-title">The Dark Light</h3>
-            <p class="home-author-book_book-describe">Many variations of passages of Lorem Ipsum willing araise
-              alteration in some form.</p>
-            <ul class="home-author-book_list-details">
-              <li class="home-author-item-details">Pages: <br> 586 pages </li>
-              <li class="home-author-item-details">Length: <br>10 Hours </li>
-            </ul>
-            <button type="button" class="home-author_bnt btn-order">Order today</button>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- END ABOUT BOOK PAGE -->
-  <section class="home-about-writer">
-    <div class="home-about-writer_wrapper container">
-      <div class="home-about-writen_author-photo">
-        <img src="./public/img/author.jpg" alt="Author of book" width="550" height="650">
-      </div>
-      <div class="home-about-writer_author-details">
-        <h2 class="home-about-writer_author title">About Author</h2>
-        <p class="home-about-writer_information">All the Lorem Ipsum generators on the Internet tend to repeated
-          predefined chunks as necessary, making this the first
-          true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.
-        </p>
-        <ul class="home-about-writer_list-data">
-          <li class="home-about-item-data"><span>02</span><br> Books published</li>
-          <li class="home-about-item-data"> <span>4.5</span><br> User Reviews</li>
-          <li class="home-about-item-data"> <span>04</span> <br>Best Seller Awards</li>
-        </ul>
-        <div class="home-about-writer_contact-inf">
-          <img src="./public/img/QR-code.jpg" alt="QR-code">
-          <ul class="contact-inf-list">
-            <li class="contact-inf-item">John Abraham , Ph.d</li>
-            <li><a href="mailto:johnabraham@gmail.com" class="contact-inf-list-link">Mail : johnabraham@gmail.com</a>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Home</a>
             </li>
-            <li><a href="tel:(+2) 123 545 9000" class="contact-inf-list-link">Phone : (+2) 123 545 9000</a></li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Pages</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">About</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Services</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="#">Contact</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">
+                <svg class="basket-icon" Width="18" Height="17">
+                  <use href="./public/sprite.svg#basket"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="btn-order">Order today</button>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START HOME BANNER PAGE -->
+    <section class="home-banner_section">
+      <div class="home-banner_wrapper container">
+        <div>
+          <p class="home-banner_welcome">Welcome to Pages</p>
+          <h2 class="home-banner_title">Books are uniquely portable magic</h2>
+          <p class="home-banner_book-description">
+            There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form.
+          </p>
+          <button type="button" class="bnt-banner btn-order">Order today</button>
+          <a class="home-banner_read-link" href="#">Read Free Demo</a>
+          <ul class="home-banner_book-list">
+            <li>Pages: <br /><span class="home-banner_book-list-item">586 pages</span></li>
+            <li>Length: <br /><span class="home-banner_book-list-item">10 Hours</span></li>
+            <li>
+              Rating: <br /><span class="home-banner_book-list-item">4.5/5 (305 ratings)</span>
+            </li>
           </ul>
         </div>
+        <div>
+          <a href="https://www.goodreads.com/book/show/1351129.The_Dark_Light_Years" target="_blank"
+            ><img
+              class="home-banner_book-img"
+              src="./public/img/dark-front-page.png"
+              alt="Front book page"
+          /></a>
+        </div>
       </div>
-    </div>
-  </section>
-  <script src="./app.js"></script>
-</body>
+    </section>
+    <!-- END HOME BANNER PAGE -->
 
+    <!-- START ABOUT BOOK PAGE -->
+    <section class="home-author-book_section">
+      <div class="home-author-book_wrapper container">
+        <h2 class="home-author-book_title title">Author’s Book Includes</h2>
+        <ul class="home-author-book_list">
+          <li class="home-author-book_item">
+            <img
+              src="./public/img/atomic-one-book.png"
+              alt="Atomic One's Book Title"
+              width="300"
+              height="400"
+            />
+            <div class="home-author-book_item-information">
+              <h3 class="home-author-book_book-title">Atomic One’s</h3>
+              <p class="home-author-book_book-describe">
+                Many variations of passages of Lorem Ipsum willing araise alteration in some form.
+              </p>
+              <ul class="home-author-book_list-details">
+                <li class="home-author-item-details">Pages: <br />586 pages</li>
+                <li class="home-author-item-details">Length: <br />10 Hours</li>
+              </ul>
+              <button type="button" class="home-author_bnt btn-order">Order today</button>
+            </div>
+          </li>
+          <li class="home-author-book_item">
+            <img
+              src="./public/img/light-front-page.png"
+              alt="The Dark Light Title"
+              width="300"
+              height="400"
+            />
+            <div class="home-author-book_item-information">
+              <h3 class="home-author-book_book-title">The Dark Light</h3>
+              <p class="home-author-book_book-describe">
+                Many variations of passages of Lorem Ipsum willing araise alteration in some form.
+              </p>
+              <ul class="home-author-book_list-details">
+                <li class="home-author-item-details">
+                  Pages: <br />
+                  586 pages
+                </li>
+                <li class="home-author-item-details">Length: <br />10 Hours</li>
+              </ul>
+              <button type="button" class="home-author_bnt btn-order">Order today</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- END ABOUT BOOK PAGE -->
+    <section class="home-about-writer">
+      <div class="home-about-writer_wrapper container">
+        <div class="home-about-writer_author-photo">
+          <img src="./public/img/author.jpg" alt="Author of book" width="550" height="650" />
+        </div>
+        <div class="home-about-writer_author-details">
+          <h2 class="home-about-writer_author title">About Author</h2>
+          <p class="home-about-writer_information">
+            All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as
+            necessary, making this the first true value generator on the Internet. It uses a
+            dictionary of over 200 Latin words, combined with a handful.
+          </p>
+          <ul class="home-about-writer_list-data">
+            <li class="home-about-writer_list-data-item">
+              <span>02</span><br />
+              Books published
+            </li>
+            <li class="home-about-writer_list-data-item">
+              <span>4.5</span><br />
+              User Reviews
+            </li>
+            <li class="home-about-writer_list-data-item">
+              <span>04</span> <br />Best Seller Awards
+            </li>
+          </ul>
+          <div class="home-about-writer_contact-inf">
+            <img src="./public/img/QR-code.jpg" alt="QR-code" />
+            <ul class="contact-inf-list">
+              <li class="contact-inf-item">John Abraham , Ph.d</li>
+              <li>
+                <a href="mailto:johnabraham@gmail.com" class="contact-inf-list-link">
+                  Mail : johnabraham@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:(+2) 123 545 9000" class="contact-inf-list-link">
+                  Phone : (+2) 123 545 9000
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="testimonial__block">
+        <div>Martin Philips</div>
+        <div>James Anderson</div>
+      </div>
+      <div class="testimonial__block">
+        <div>Christina Louis</div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
 </html>

@@ -1,66 +1,82 @@
 /* START BANNER SECTION*/
 .home-banner_section {
   background-color: var(--secondary-color);
-  padding: 100px 0px;
+  padding: 100px 0;
 }
+
 .home-banner_wrapper {
-  display: flex;
-}
-/* START BANNER IMFORMATION ABOUT BOOK*/
-.home-banner_book-information {
-  max-width: 600px;
-  margin: auto 90px auto 0px;
+  display: grid;
+  gap: 130px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   color: var(--primary-text-color);
 }
+
+/* START BANNER IMFORMATION ABOUT BOOK*/
 .home-banner_welcome {
   display: flex;
   align-items: center;
-  font: 400 italic 24px/1.5 "Cardo";
+  font: 400 italic 24px/1.5 var(--secondary-font);
   margin-bottom: 15px;
 }
+
 .home-banner_welcome::before {
   background: var(--primary-color);
-  content: "";
+  content: '';
   display: block;
   width: 34px;
   height: 1px;
   margin-right: 10px;
 }
+
 .home-banner_title {
-  font: 700 65px/1.2 "Cardo";
+  font: 700 65px/1.2 var(--secondary-font);
   letter-spacing: -0.02em;
   margin-bottom: 35px;
 }
+
 .home-banner_book-description {
-  color: #b4c7e7;
+  color: var(--light-color);
   letter-spacing: -0.01em;
   margin-bottom: 35px;
 }
 
 .home-banner_read-link {
-  font: 700 19px/1.5 "Cardo";
-  color:#fff;
+  font: 700 19px/1.5 var(--secondary-font);
   border-bottom: 1px solid var(--primary-text-color);
   transition: color 250ms var(--timing-function);
+  color: var(--primary-text-color);
 }
+
 .home-banner_read-link:hover {
   color: var(--primary-color);
 }
+
 .home-banner_book-list {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
 }
+
 .home-banner_book-list > li {
-  display: flex;
-  align-items: first baseline;
+  display: block;
+  padding-left: 20px;
+  position: relative;
 }
+
 .home-banner_book-list > li::before {
-  content: "";
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
   width: 10px;
   height: 10px;
   margin-right: 10px;
   background-color: var(--primary-color);
   border-radius: 50%;
+}
+
+.home-banner_book-list-item {
+  color: var(--light-color);
 }
 
 /* END BANNER IMFORMATION ABOUT BOOK*/
@@ -71,6 +87,7 @@
   opacity: 0.7;
   transition: opacity 250ms var(--timing-function);
 }
+
 .home-banner_book-img:hover {
   opacity: 1;
 }
