@@ -82,18 +82,16 @@
 /* END BANNER IMFORMATION ABOUT BOOK*/
 
 /* START BANNER FRONT PAGE BOOK*/
-.home-banner_book-front-page {
-  border: 8px solid var(--border-color-card);
-}
 .home-banner_book-img {
+  border: 8px solid var(--border-color-card);
   opacity: 0.7;
   transition: opacity 250ms var(--timing-function);
   background-image: url('../../../../../public/img/dark-front-page.png');
 }
 
 .home-banner_book-img:hover {
-  content: url('../../../../../public/img/light-front-page.png');
   opacity: 1;
+  content: url('../../../../../public/img/light-front-page.png');
 }
 /* END BANNER FRONT PAGE BOOK*/
 
