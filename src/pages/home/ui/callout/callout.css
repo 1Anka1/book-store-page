@@ -1,0 +1,9 @@
+.callout {
+  background-color: var(--secondary-color);
+}
+.callout__wrapper {
+  display: grid;
+  gap: 125px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; 
+}

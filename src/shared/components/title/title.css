@@ -1,7 +1,7 @@
 .title {
   font-family: var(--secondary-font), serif;
   color: var(--secondary-color);
-  margin: 0 0 15px;
+  margin: 0 0 22px;
   font-size: 45px;
 }
 
@@ -14,5 +14,5 @@
   display: block;
   width: 55px;
   height: 3px;
-  margin-bottom: 15px;
+  margin: 22px 0px;
 }
