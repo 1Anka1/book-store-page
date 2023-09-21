@@ -1,7 +1,7 @@
 .btn-order {
   background-color: var(--primary-color);
   border: 0px;
-  padding: 20px 50px;
+  padding: 10px 40px;
   color: var(--secondary-color);
   font: 700 19px/1.5 'Cargo', serif;
   cursor: pointer;
@@ -21,4 +21,3 @@
 .home-author_bnt:hover {
   background-color: var(--primary-color);
 }
-

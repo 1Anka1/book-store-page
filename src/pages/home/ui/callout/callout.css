@@ -1,7 +1,7 @@
 .callout {
   background-color: var(--secondary-color);
 }
-.callout__wrapper {
+.callout__container{
   display: grid;
   gap: 125px;
   grid-template-columns: repeat(2, 1fr);

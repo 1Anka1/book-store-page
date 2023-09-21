@@ -7,29 +7,29 @@
 .header {
   background-color: var(--secondary-color);
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   padding: 20px;
 }
-.header-container-list {
+.header__container-list {
   display: flex;
 }
-.header-container-list {
+.header__container-list {
   margin-right: 25px;
 }
-.header-container-title {
+.header__container-title {
   color: #fff;
   font-size: 23px;
 }
 
 /* SOCIAL ICONS */
-.header-social-network-list {
+.header__social-network-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-social-network-list > li:not(:last-child) {
+.header__social-network-list > li:not(:last-child) {
   margin-right: 10px;
 }
 .social-network-link {

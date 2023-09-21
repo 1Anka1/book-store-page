@@ -1,13 +1,13 @@
 .home-about-writer {
   background-color: var(--background-color);
 }
-.home-about-writer_author-photo {
+.home-about-writer__author-photo {
   margin-right: 100px;
   position: relative;
   z-index: 1;
 }
 
-.home-about-writer_author-photo::before {
+.home-about-writer__author-photo::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -18,26 +18,26 @@
   border: 15px solid var(--primary-color);
 }
 
-.home-about-writer_wrapper {
+.home-about-writer__container {
   display: flex;
 }
 
-.home-about-writer_author-details {
+.home-about-writer__author-details {
   max-width: 600px;
 }
 
-.home-about-writer_list-data {
+.home-about-writer__list-data {
   display: flex;
   align-items: center;
   margin: 20px -20px 40px;
 }
 
-.home-about-writer_list-data-item {
+.home-about-writer__list-data-item {
   position: relative;
   padding: 0 20px;
 }
 
-.home-about-writer_list-data-item:not(:last-child)::before {
+.home-about-writer__list-data-item:not(:last-child)::before {
   content: '';
   position: absolute;
   top: 0;
@@ -48,12 +48,12 @@
   background-color: var(--primary-color);
 }
 
-.home-about-writer_list-data-item > span {
+.home-about-writer__list-data-item > span {
   font: 700 55px/1 var(--secondary-font);
   color: var(--secondary-color);
 }
 
-.home-about-writer_contact-inf {
+.home-about-writer__contact-inf {
   display: flex;
   background-color: var(--secondary-color);
   padding: 15px;
