@@ -1,5 +1,5 @@
 .home-about-writer {
-  background-color: #f4f8ff;
+  background-color: var(--background-color);
 }
 .home-about-writer_author-photo {
   margin-right: 100px;

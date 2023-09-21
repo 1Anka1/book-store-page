@@ -4,10 +4,6 @@
   margin: 0 0 22px;
   font-size: 45px;
 }
-
-.title--light {
-  color: #fff;
-}
 .title::after {
   background: var(--primary-color);
   content: '';
@@ -15,4 +11,13 @@
   width: 55px;
   height: 3px;
   margin: 22px 0px;
+}
+.title-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+.title--light {
+  color: #fff;
 }

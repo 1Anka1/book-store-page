@@ -1,9 +1,3 @@
-.home-author-book_title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
 .home-author-book_title::after {
   background: var(--primary-color);
   content: '';
