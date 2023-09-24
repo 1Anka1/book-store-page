@@ -45,3 +45,16 @@
   font: 400 15px/1.5 'Inter', sans-serif;
   color: var(--body-color);
 }
+.chapter__book-content {
+  margin-bottom: 80px;
+}
+.chapter__subscription {
+  text-align: center;
+}
+.chapter__btn {
+  padding: 15px 100px;
+  margin-bottom: 30px;
+}
+.chapter__subscription-link {
+  color: var(--secondary-color);
+}
