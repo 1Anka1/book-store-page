@@ -1,0 +1,7 @@
+.blog__article-list {
+  display: flex;
+  margin: -15px;
+}
+.blog__article-items{
+    margin: 15px;
+}

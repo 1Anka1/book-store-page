@@ -2,7 +2,7 @@
   font-family: var(--secondary-font), serif;
   color: var(--secondary-color);
   margin: 0 0 22px;
-  font-size: 45px;
+  font-size: 40px;
 }
 .title::after {
   background: var(--primary-color);
