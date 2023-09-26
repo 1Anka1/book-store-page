@@ -11,7 +11,10 @@
 }
 .blog__article-items-block {
   padding: 25px 30px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
+
 .blog__article-title {
   color: var(--secondary-color);
   font: 700 20px/1.5 'Cargo', serif;

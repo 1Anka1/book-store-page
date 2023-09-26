@@ -44,6 +44,9 @@
   padding: 20px 15px;
   background-color: var(--secondary-color);
 }
+.testimonial__review {
+  color: var(--light-color);
+}
 .testimonial__user {
   display: flex;
   align-items: center;

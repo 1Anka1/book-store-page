@@ -21,3 +21,11 @@
 .title--light {
   color: #fff;
 }
+.title--blue::after {
+  background: var(--secondary-color);
+  content: '';
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin: 22px 0px;
+}

@@ -8,6 +8,13 @@
   opacity: 0.9;
   transition: background-color 250ms var(--timing-function);
 }
+.btn--blue {
+  padding: 15px 100px;
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+  font: 400 15px/1.5 'Cardo', italic;
+}
+
 /* BANNER PAGE */
 .bnt-banner {
   margin: 0px 30px 30px 0px;
