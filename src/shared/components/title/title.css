@@ -19,7 +19,7 @@
   margin: 10px 0;
 }
 .title--light {
-  color: #fff;
+  color: var(--primary-text-color);
 }
 .title--blue::after {
   background: var(--secondary-color);
@@ -28,4 +28,11 @@
   width: 55px;
   height: 3px;
   margin: 22px 0px;
+}
+.title--logo {
+  color: var(--primary-text-color);
+  font-size: 23px;
+}
+.title--logo-blue {
+  color: var(--secondary-color);
 }

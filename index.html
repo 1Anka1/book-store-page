@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/shared/components/title/title.css" />
   <link rel="stylesheet" href="./src/shared/components/button/button.css" />
   <link rel="stylesheet" href="./src/shared/components/input/input.css" />
+  <link rel="stylesheet" href="./src/shared/components/icons/icons.css" />
   <!-- PAGES - START SECTION OF THE HOME PAGE -->
 
   <link rel="stylesheet" href="./src/pages/home/ui/banner/banner.css" />
@@ -35,10 +36,10 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__container-list">
-        <svg class="header__logo-icon" width="25" height="28">
+        <svg class="icon" width="25" height="28">
           <use href="./public/sprite.svg#page"></use>
         </svg>
-        <h1 class="header__container-title">Pages</h1>
+        <h1 class="title--logo">Pages</h1>
       </div>
       <ul class="header__social-network-list">
         <li>
@@ -80,16 +81,17 @@
           <li class="nav-list-item">
             <a class="nav-list-link" href="#">Contact</a>
           </li>
-          <li class="nav-list-item">
+          <li class="nav-list-item-badge">
             <a href="#">
-              <svg class="basket-icon" Width="18" Height="17">
+              <svg class="basket-icon" width="18" height="17">
                 <use href="./public/sprite.svg#basket"></use>
               </svg>
+              <span class="badge">01</span>
             </a>
           </li>
         </ul>
       </nav>
-      <button type="button" class="btn-order">Order today</button>
+      <button type="button" class="btn-order">Order Today</button>
     </div>
   </header>
 
@@ -451,7 +453,110 @@
           <button class="btn-order btn--blue" type="button" id="button-addon2">Subscribe</button>
         </div>
       </div>
+    </div>
+  </section>
 
+  <section class="footer section">
+    <div class="footer__container container">
+      <div>
+        <div class="footer__container-list">
+          <svg class="icon" width="25" height="28">
+            <use href="./public/sprite.svg#page"></use>
+          </svg>
+          <h1 class="footer__container-title">Pages</h1>
+        </div>
+        <ul class="footer__social-network-list">
+          <li>
+            <a class="social-network-link social-link--footer" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="./public/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link social-link--footer" href="#">
+              <svg class="social-network-icon--footer " Width="18" Height="18">
+                <use href="./public/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link social-link--footer" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="./public/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link social-link--footer" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="./public/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper">
+        <ul class="footer__nav-link-list">
+          <h3 class="footer__title title--light title--light">Explore</h3>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Home</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">About Us</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Services</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Appointments</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Blog</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="footer__nav-link-list">
+          <h3 class="footer__title title--light">Utility Pages</h3>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Start here</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Style guide</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">404 not found</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Password protected</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Licenses</a>
+          </li>
+          <li class="footer__nav-list-item">
+            <a class="footer__nav-list-link" href="#">Changelog</a>
+          </li>
+        </ul>
+        <ul class="footer__address-list">
+          <h3 class="footer__title title--light">Utility Pages</h3>
+          <li class="footer__address-list-item">
+            <a class="footer__address-list-link" target="_blank"
+              href="https://maps.app.goo.gl/RGSzBohB3G2yKyMB8">Address : <span> 24A Kingston St, Los Vegas NC 28202,
+                USA.</span></a>
+          </li>
+          <li class="footer__address-list-item">
+            <a class="footer__address-list-link" href="mailto:support@doctors.com"> Mail : <span>
+                support@doctors.com</span></a>
+          </li>
+          <li class="footer__address-list-item">
+            <a class="footer__address-list-link" href="tel:(+22)1234567900"> Phone : <span> (+22) 123 - 4567 -
+                900</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </body>
