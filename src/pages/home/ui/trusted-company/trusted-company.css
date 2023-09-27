@@ -3,12 +3,14 @@
   margin-bottom: 30px;
   fill: var(--secondary-color);
 }
+
 .trusted-company__company-title {
   font: 700 24px/1.2 var(--secondary-font);
   margin-bottom: 10px;
   text-align: center;
   color: var(--secondary-color);
 }
+
 .trusted-company__company-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

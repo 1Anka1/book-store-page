@@ -1,17 +1,18 @@
 .callout {
   background-color: var(--secondary-color);
 }
-.callout__container{
+
+.callout__container {
   display: grid;
   gap: 125px;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-.callout_advert-description {
+
+.callout__advert-description {
   margin-bottom: 30px;
 }
-.callout__advert-btn {
-  border: 1px solid var(--primary-color);
-  background-color: var(--secondary-color);
+
+.callout__advert-button {
   color: var(--primary-text-color);
 }

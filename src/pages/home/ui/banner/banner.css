@@ -1,9 +1,9 @@
 /* START BANNER SECTION*/
-.home-banner__section {
+.banner {
   background-color: var(--secondary-color);
 }
 
-.home-banner__container {
+.banner__container {
   display: grid;
   gap: 130px;
   grid-template-columns: repeat(2, 1fr);
@@ -12,14 +12,14 @@
 }
 
 /* START BANNER IMFORMATION ABOUT BOOK*/
-.home-banner__welcome {
+.banner__welcome {
   display: flex;
   align-items: center;
   font: 400 italic 20px/1.5 var(--secondary-font);
   margin-bottom: 15px;
 }
 
-.home-banner__welcome::before {
+.banner__welcome::before {
   background: var(--primary-color);
   content: '';
   display: block;
@@ -28,41 +28,45 @@
   margin-right: 10px;
 }
 
-.home-banner__title {
+.banner__title {
   font: 700 65px/1.2 var(--secondary-font);
   letter-spacing: -0.02em;
   margin-bottom: 35px;
 }
 
-.home-banner__book-description {
+.banner__book-description {
   color: var(--light-color);
   letter-spacing: -0.01em;
   margin-bottom: 35px;
 }
 
-.home-banner__read-link {
+.banner__read-link {
   font: 700 19px/1.5 var(--secondary-font);
   border-bottom: 1px solid var(--primary-text-color);
   transition: color 250ms var(--timing-function);
   color: var(--primary-text-color);
 }
 
-.home-banner__read-link:hover {
+.banner__read-link:hover {
   color: var(--primary-color);
 }
 
-.home-banner__book-list {
+.banner__book-list {
   display: flex;
   justify-content: space-between;
 }
 
-.home-banner__book-list > li {
+.banner__book-list > li {
   display: block;
   padding-left: 20px;
   position: relative;
 }
 
-.home-banner__book-list > li::before {
+.banner__button {
+  margin: 0 30px 30px 0;
+}
+
+.banner__book-list > li::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -74,23 +78,23 @@
   border-radius: 50%;
 }
 
-.home-banner__book-list-item {
+.banner__book-list-item {
   color: var(--light-color);
 }
 
 /* END BANNER IMFORMATION ABOUT BOOK*/
 
 /* START BANNER FRONT PAGE BOOK*/
-.home-banner__book-img {
+.banner__book-img {
   border: 8px solid var(--border-color-card);
   opacity: 0.7;
   transition: opacity 250ms var(--timing-function);
-  background-image: url('../../../../../public/img/dark-front-page.png');
+  background-image: url('/img/dark-front-page.png');
 }
 
-.home-banner__book-img:hover {
+.banner__book-img:hover {
   opacity: 1;
-  content: url('../../../../../public/img/light-front-page.png');
+  content: url('/img/light-front-page.png');
 }
 /* END BANNER FRONT PAGE BOOK*/
 

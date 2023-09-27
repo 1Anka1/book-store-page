@@ -1,6 +1,7 @@
 :root {
   --primary-color: #ffca42;
-  --secondary-font: 'Cardo';
+  --primary-font: 'Inter', sans-serif;
+  --secondary-font: 'Cardo', serif;
   --secondary-color: #1b3764;
   --light-color: #b4c7e7;
   --dark-color: #000000;

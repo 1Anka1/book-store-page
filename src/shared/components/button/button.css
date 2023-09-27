@@ -1,30 +1,35 @@
-.btn-order {
+.button {
   background-color: var(--primary-color);
-  border: 0px;
+  border: 1px solid transparent;
   padding: 10px 40px;
   color: var(--secondary-color);
-  font: 400 15px/1.5 'Cargo', serif;
+  font-family: var(--secondary-font);
   cursor: pointer;
-  opacity: 0.9;
-  transition: background-color 250ms var(--timing-function);
-}
-.btn--blue {
-  padding: 15px 100px;
-  background-color: var(--secondary-color);
-  color: var(--primary-text-color);
-  font: 400 15px/1.5 'Cardo', italic;
+  transition: all 0.25s var(--timing-function);
+  transition-property: background-color, border-color, color;
 }
 
-/* BANNER PAGE */
-.bnt-banner {
-  margin: 0px 30px 30px 0px;
+.button:hover {
+  color: var(--primary-color);
 }
-/* HOME PAGE */
-.home-author_bnt {
-  background-color: #fff;
-  border: 1px solid var(--primary-color);
-  transition: background-color 250ms var(--timing-function);
+
+.button:hover,
+.button--outline {
+  background: none;
+  border-color: var(--primary-color);
 }
-.home-author_bnt:hover {
+
+.button--outline:hover {
   background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.button--secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+}
+
+.button--secondary:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }

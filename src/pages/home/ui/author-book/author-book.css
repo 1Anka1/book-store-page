@@ -1,4 +1,4 @@
-.home-author-book__title::after {
+.author-book__title::after {
   background: var(--primary-color);
   content: '';
   display: block;
@@ -6,38 +6,46 @@
   height: 3px;
   margin-bottom: 15px;
 }
-.home-author-book__list {
+
+.author-book__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
-.home-author-book__item {
+
+.author-book__item {
   display: flex;
   flex-basis: calc((100% - 60px) / 2);
   margin-top: 30px;
   margin-left: 30px;
 }
-.home-author-book__item > img {
+
+.author-book__item > img {
   border: 8px solid var(--border-color-card);
   margin-right: 50px;
 }
-.home-author-book__item-information {
+
+.author-book__item-information {
   margin-top: auto;
   margin-bottom: auto;
 }
-.home-author-book__book-title {
+
+.author-book__book-title {
   color: var(--secondary-color);
   font: 700 32px/1.5 var(--secondary-font);
   margin-bottom: 10px;
 }
-.home-author-book__book-describe {
+
+.author-book__book-describe {
   margin-bottom: 15px;
 }
-.home-author-book__list-details {
+
+.author-book__list-details {
   display: flex;
 }
-.home-author-item-details {
+
+.author-book__item-details {
   display: block;
   padding-left: 20px;
   position: relative;
@@ -45,7 +53,8 @@
   color: var(--secondary-color);
   margin-bottom: 30px;
 }
-.home-author-item-details::before {
+
+.author-book__item-details::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -56,7 +65,8 @@
   background-color: var(--primary-color);
   border-radius: 50%;
 }
-.home-author-item-details > span {
-  font: 400 19px/1.5 'Inter', sans-serif;
+
+.author-book__item-details > span {
+  font: 400 19px/1.5 var(--primary-font);
   color: var(--body-color);
 }
