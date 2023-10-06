@@ -1,13 +1,8 @@
-.footer {
-  background-color: var(--secondary-color);
-}
 .icon {
   fill: var(--primary-color);
   margin-right: 10px;
 }
-.footer__container-title {
-  color: var(--primary-text-color);
-}
+
 .social-network-link {
   display: flex;
   justify-content: center;
@@ -17,7 +12,7 @@
   background-color: #fff;
   transition: background-color 250ms var(--timing-function);
 }
-.social-link--footer {
+.social-link--secondary {
   background-color: var(--secondary-color);
 }
 .social-network-link:hover {

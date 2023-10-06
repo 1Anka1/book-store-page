@@ -1,3 +1,6 @@
+@import 'normalize.css';
+@import './variables';
+@import './icons';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
@@ -51,7 +54,6 @@ body {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -62,6 +64,7 @@ img {
   width: 100%;
   padding: 50px 15px;
 }
+
 .section {
   padding: 100px 0;
 }

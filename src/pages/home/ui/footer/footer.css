@@ -1,9 +1,14 @@
 .footer {
   padding: 50px;
+  background-color: var(--secondary-color);
 }
 
 .footer__container {
   display: flex;
+}
+
+.footer__container-title {
+  color: var(--primary-text-color);
 }
 
 .footer__container-list {
