@@ -5,12 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
 
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -29,19 +27,11 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul,
 li {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-/* Inherit fonts for inputs and buttons */
-select,
-button,
-input {
-  font-family: inherit;
 }
 
 a {

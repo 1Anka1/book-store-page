@@ -12,15 +12,19 @@
   background-color: #fff;
   transition: background-color 250ms var(--timing-function);
 }
+
 .social-link--secondary {
   background-color: var(--secondary-color);
 }
+
 .social-network-link:hover {
   background-color: var(--primary-color);
 }
+
 .social-network-icon {
   fill: var(--secondary-color);
 }
+
 .social-network-icon--footer {
   fill: var(--primary-text-color);
 }
