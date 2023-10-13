@@ -1,114 +1,114 @@
 <template>
-     <section class="footer section">
-          <div class="footer__container container">
-            <div>
-              <div class="footer__container-list">
-                <svg class="icon" width="25" height="28">
-                  <use href="/sprite.svg#page"></use>
-                </svg>
-                <h1 class="footer__container-title">Pages</h1>
-              </div>
-              <ul class="footer__social-network-list">
-                <li>
-                  <a class="social-network-link social-link--secondary" href="#">
-                    <svg class="social-network-icon--footer" Width="18" Height="18">
-                      <use href="/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-network-link social-link--secondary" href="#">
-                    <svg class="social-network-icon--footer" Width="18" Height="18">
-                      <use href="/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-network-link social-link--secondary" href="#">
-                    <svg class="social-network-icon--footer" Width="18" Height="18">
-                      <use href="/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="social-network-link social-link--secondary" href="#">
-                    <svg class="social-network-icon--footer" Width="18" Height="18">
-                      <use href="/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__wrapper">
-              <ul class="footer__nav-link-list">
-                <h3 class="footer__title title--light title--light">Explore</h3>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Home</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">About Us</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Services</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Appointments</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Blog</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-link-list">
-                <h3 class="footer__title title--light">Utility Pages</h3>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Start here</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Style guide</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">404 not found</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Password protected</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Licenses</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__header__nav-link" href="#">Changelog</a>
-                </li>
-              </ul>
-              <ul class="footer__address-list">
-                <h3 class="footer__title title--light">Keep in Touch</h3>
-                <li class="footer__list-item">
-                  <a
-                    class="footer__address-list-link"
-                    target="_blank"
-                    href="https://maps.app.goo.gl/RGSzBohB3G2yKyMB8"
-                    >Address :
-                    <span class="footer__address-list-link-info"
-                      >24A Kingston St, Los Vegas NC 28202, USA.</span
-                    ></a
-                  >
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__address-list-link" href="mailto:support@doctors.com">
-                    Mail : <span class="footer__address-list-link-info">support@doctors.com</span></a
-                  >
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__address-list-link" href="tel:(+22)1234567900">
-                    Phone : <span class="footer__address-list-link-info">(+22) 123 - 4567 - 900</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+  <section class="footer section">
+    <div class="footer__container container">
+      <div>
+        <div class="footer__container-list">
+          <svg class="icon" width="25" height="28">
+            <use href="@/assets/images/sprite.svg#page"></use>
+          </svg>
+          <h1 class="footer__container-title">Pages</h1>
+        </div>
+        <ul class="footer__social-network-list">
+          <li>
+            <a class="social-network-link social-link--secondary" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="@/assets/images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link social-link--secondary" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="@/assets/images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link social-link--secondary" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="@/assets/images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network-link social-link--secondary" href="#">
+              <svg class="social-network-icon--footer" Width="18" Height="18">
+                <use href="@/assets/images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper">
+        <ul class="footer__nav-link-list">
+          <h3 class="footer__title title--light title--light">Explore</h3>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Home</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">About Us</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Services</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Appointments</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Blog</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="footer__nav-link-list">
+          <h3 class="footer__title title--light">Utility Pages</h3>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Start here</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Style guide</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">404 not found</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Password protected</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Licenses</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__header__nav-link" href="#">Changelog</a>
+          </li>
+        </ul>
+        <ul class="footer__address-list">
+          <h3 class="footer__title title--light">Keep in Touch</h3>
+          <li class="footer__list-item">
+            <a
+              class="footer__address-list-link"
+              target="_blank"
+              href="https://maps.app.goo.gl/RGSzBohB3G2yKyMB8"
+              >Address :
+              <span class="footer__address-list-link-info"
+                >24A Kingston St, Los Vegas NC 28202, USA.</span
+              ></a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__address-list-link" href="mailto:support@doctors.com">
+              Mail : <span class="footer__address-list-link-info">support@doctors.com</span></a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__address-list-link" href="tel:(+22)1234567900">
+              Phone : <span class="footer__address-list-link-info">(+22) 123 - 4567 - 900</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>

@@ -1,34 +1,34 @@
 <template>
-     <section class="learn-content section">
-          <div class="learn-content__container container">
-            <h2 class="title--center title">What will you learn?</h2>
-            <div class="learn-content__wrapper">
-              <div class="learn-content__info-capsule">
-                <ul class="learn-content__info-list">
-                  <li class="learn-content__info-items">
-                    <span>01</span> <br />
-                    Use HDFS & Map Reduce for storing & analyzing data at scale.
-                  </li>
-                  <li class="learn-content__info-items">
-                    <span>02</span> <br />
-                    Consume streaming data using Spark Streaming, Flink, and Storm.
-                  </li>
-                  <li class="learn-content__info-items">
-                    <span>03</span> <br />
-                    Choose an appropriate data storage technology for your application
-                  </li>
-                  <li class="learn-content__info-items">
-                    <span>04</span> <br />
-                    Analyze non-relational data using HBase, Cassandra, and MongoDB.
-                  </li>
-                </ul>
-              </div>
-              <div class="learn-content__woman-photo">
-                <img src="/img/reading-girl.png" alt="Reading girl" width="550" height="650" />
-              </div>
-            </div>
-          </div>
-        </section>
+  <section class="learn-content section">
+    <div class="learn-content__container container">
+      <h2 class="title--center title">What will you learn?</h2>
+      <div class="learn-content__wrapper">
+        <div class="learn-content__info-capsule">
+          <ul class="learn-content__info-list">
+            <li class="learn-content__info-items">
+              <span>01</span> <br />
+              Use HDFS & Map Reduce for storing & analyzing data at scale.
+            </li>
+            <li class="learn-content__info-items">
+              <span>02</span> <br />
+              Consume streaming data using Spark Streaming, Flink, and Storm.
+            </li>
+            <li class="learn-content__info-items">
+              <span>03</span> <br />
+              Choose an appropriate data storage technology for your application
+            </li>
+            <li class="learn-content__info-items">
+              <span>04</span> <br />
+              Analyze non-relational data using HBase, Cassandra, and MongoDB.
+            </li>
+          </ul>
+        </div>
+        <div class="learn-content__woman-photo">
+          <img src="/img/reading-girl.png" alt="Reading girl" width="550" height="650" />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>
@@ -78,5 +78,4 @@
   width: 100%;
   border: 15px solid var(--primary-color);
 }
-
 </style>

@@ -1,3 +1,32 @@
+<template>
+  <button
+    type="button"
+    class="button"
+    :class="[
+      {
+        'button--outline': outline,
+        [`button--${color}`]: color,
+      },
+    ]"
+  >
+    <slot />
+  </button>
+</template>
+
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    outline?: boolean;
+    color?: 'primary' | 'secondary';
+  }>(),
+  {
+    color: 'primary',
+    outline: true,
+  },
+);
+</script>
+
+<style>
 .button {
   background-color: var(--primary-color);
   border: 1px solid transparent;
@@ -33,3 +62,4 @@
   color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
+</style>

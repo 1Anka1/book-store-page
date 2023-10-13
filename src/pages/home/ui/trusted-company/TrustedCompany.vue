@@ -1,49 +1,49 @@
 <template>
-       <section class="trusted-company section">
-          <div class="container">
-            <h2 class="title--center title">Trusted by the Best</h2>
-            <div class="trusted-company__company-wrapper">
-              <ul class="trusted-company__company-list">
-                <li class="trusted-company__company-items">
-                  <div class="trusted-company__company-icon">
-                    <svg class="trusted-company__logo-icon" width="100" height="90">
-                      <use href="/sprite-logo.svg#icon-amazen"></use>
-                    </svg>
-                  </div>
-                  <h3 class="trusted-company__company-title">Amazen Corp</h3>
-                  <p>A long established fact that a who looking at its layout.</p>
-                </li>
-                <li class="trusted-company__company-items">
-                  <div class="trusted-company__company-icon">
-                    <svg class="trusted-company__logo-icon" width="100" height="90">
-                      <use href="/sprite-logo.svg#icon-megan"></use>
-                    </svg>
-                  </div>
-                  <h3 class="trusted-company__company-title">Megan Books</h3>
-                  <p>A long established fact that a who looking at its layout.</p>
-                </li>
-                <li class="trusted-company__company-items">
-                  <div class="trusted-company__company-icon">
-                    <svg class="trusted-company__logo-icon" width="100" height="90">
-                      <use href="/sprite-logo.svg#icon-los"></use>
-                    </svg>
-                  </div>
-                  <h3 class="trusted-company__company-title">Los Books</h3>
-                  <p>A long established fact that a who looking at its layout.</p>
-                </li>
-                <li class="trusted-company__company-items">
-                  <div class="trusted-company__company-icon">
-                    <svg class="trusted-company__logo-icon" width="100" height="90">
-                      <use href="/sprite-logo.svg#icon-urban-lib"></use>
-                    </svg>
-                  </div>
-                  <h3 class="trusted-company__company-title">Urban Lib</h3>
-                  <p>A long established fact that a who looking at its layout.</p>
-                </li>
-              </ul>
+  <section class="trusted-company section">
+    <div class="container">
+      <h2 class="title--center title">Trusted by the Best</h2>
+      <div class="trusted-company__company-wrapper">
+        <ul class="trusted-company__company-list">
+          <li class="trusted-company__company-items">
+            <div class="trusted-company__company-icon">
+              <svg class="trusted-company__logo-icon" width="100" height="90">
+                <use href="@/assets/images/sprite-logo.svg#icon-amazen"></use>
+              </svg>
             </div>
-          </div>
-        </section>
+            <h3 class="trusted-company__company-title">Amazen Corp</h3>
+            <p>A long established fact that a who looking at its layout.</p>
+          </li>
+          <li class="trusted-company__company-items">
+            <div class="trusted-company__company-icon">
+              <svg class="trusted-company__logo-icon" width="100" height="90">
+                <use href="@/assets/images/sprite-logo.svg#icon-megan"></use>
+              </svg>
+            </div>
+            <h3 class="trusted-company__company-title">Megan Books</h3>
+            <p>A long established fact that a who looking at its layout.</p>
+          </li>
+          <li class="trusted-company__company-items">
+            <div class="trusted-company__company-icon">
+              <svg class="trusted-company__logo-icon" width="100" height="90">
+                <use href="@/assets/images/sprite-logo.svg#icon-los"></use>
+              </svg>
+            </div>
+            <h3 class="trusted-company__company-title">Los Books</h3>
+            <p>A long established fact that a who looking at its layout.</p>
+          </li>
+          <li class="trusted-company__company-items">
+            <div class="trusted-company__company-icon">
+              <svg class="trusted-company__logo-icon" width="100" height="90">
+                <use href="@/assets/images/sprite-logo.svg#icon-urban-lib"></use>
+              </svg>
+            </div>
+            <h3 class="trusted-company__company-title">Urban Lib</h3>
+            <p>A long established fact that a who looking at its layout.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>

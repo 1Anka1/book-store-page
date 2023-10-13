@@ -1,26 +1,26 @@
 <template>
-     <section class="banner">
-          <div class="banner__container container">
-            <div>
-              <p class="banner__welcome">Welcome to Pages</p>
-              <h2 class="banner__title">Books are uniquely portable magic</h2>
-              <p class="banner__book-description">
-                There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form.
-              </p>
-              <button type="button" class="banner__button button">Order today</button>
-              <a class="banner__read-link" href="#">Read Free Demo</a>
-              <ul class="banner__book-list">
-                <li>Pages: <br /><span class="banner__book-list-item">586 pages</span></li>
-                <li>Length: <br /><span class="banner__book-list-item">10 Hours</span></li>
-                <li>Rating: <br /><span class="banner__book-list-item">4.5/5 (305 ratings)</span></li>
-              </ul>
-            </div>
-            <div>
-              <img class="banner__book-img" src="/img/dark-front-page.png" alt="Front book page" />
-            </div>
-          </div>
-        </section>
+  <section class="banner">
+    <div class="banner__container container">
+      <div>
+        <p class="banner__welcome">Welcome to Pages</p>
+        <h2 class="banner__title">Books are uniquely portable magic</h2>
+        <p class="banner__book-description">
+          There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form.
+        </p>
+        <button type="button" class="banner__button button">Order today</button>
+        <a class="banner__read-link" href="#">Read Free Demo</a>
+        <ul class="banner__book-list">
+          <li>Pages: <br /><span class="banner__book-list-item">586 pages</span></li>
+          <li>Length: <br /><span class="banner__book-list-item">10 Hours</span></li>
+          <li>Rating: <br /><span class="banner__book-list-item">4.5/5 (305 ratings)</span></li>
+        </ul>
+      </div>
+      <div>
+        <img class="banner__book-img" src="/img/dark-front-page.png" alt="Front book page" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>

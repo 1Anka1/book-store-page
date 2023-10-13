@@ -1,59 +1,60 @@
 <template>
-    <section class="author-book section">
-          <div class="author-book__container container">
-            <h2 class="title--center title">Author’s Book Includes</h2>
-            <ul class="author-book__list">
-              <li class="author-book__item">
-                <img
-                  src="/img/atomic-one-book.png"
-                  alt="Atomic One's Book Title"
-                  width="300"
-                  height="400"
-                />
-                <div class="author-book__item-information">
-                  <h3 class="author-book__book-title">Atomic One’s</h3>
-                  <p class="author-book__book-describe">
-                    Many variations of passages of Lorem Ipsum willing araise alteration in some form.
-                  </p>
-                  <ul class="author-book__list-details">
-                    <li class="author-book__item-details">
-                      Pages: <br />
-                      <span>586 pages</span>
-                    </li>
-                    <li class="author-book__item-details">
-                      Length: <br />
-                      <span>10 Hours</span>
-                    </li>
-                  </ul>
-                  <button type="button" class="button button--outline">Order today</button>
-                </div>
+  <section class="author-book section">
+    <div class="author-book__container container">
+      <h2 class="title--center title">Author’s Book Includes</h2>
+      <ul class="author-book__list">
+        <li class="author-book__item">
+          <img
+            src="/img/atomic-one-book.png"
+            alt="Atomic One's Book Title"
+            width="300"
+            height="400"
+          />
+          <div class="author-book__item-information">
+            <h3 class="author-book__book-title">Atomic One’s</h3>
+            <p class="author-book__book-describe">
+              Many variations of passages of Lorem Ipsum willing araise alteration in some form.
+            </p>
+            <ul class="author-book__list-details">
+              <li class="author-book__item-details">
+                Pages: <br />
+                <span>586 pages</span>
               </li>
-              <li class="author-book__item">
-                <img
-                  src="/img/light-front-page.png"
-                  alt="The Dark Light Title"
-                  width="300"
-                  height="400"
-                />
-                <div class="author-book__item-information">
-                  <h3 class="author-book__book-title">The Dark Light</h3>
-                  <p class="author-book__book-describe">
-                    Many variations of passages of Lorem Ipsum willing araise alteration in some form.
-                  </p>
-                  <ul class="author-book__list-details">
-                    <li class="author-book__item-details">
-                      Pages: <br />
-                      <span>586 pages</span>
-                    </li>
-                    <li class="author-book__item-details">Length: <br /><span>10 Hours</span></li>
-                  </ul>
-                  <button type="button" class="button button--outline">Order today</button>
-                </div>
+              <li class="author-book__item-details">
+                Length: <br />
+                <span>10 Hours</span>
               </li>
             </ul>
+            <Button outline>Order today</Button>
           </div>
-        </section>
+        </li>
+        <li class="author-book__item">
+          <img
+            src="/img/light-front-page.png"
+            alt="The Dark Light Title"
+            width="300"
+            height="400"
+          />
+          <div class="author-book__item-information">
+            <h3 class="author-book__book-title">The Dark Light</h3>
+            <p class="author-book__book-describe">
+              Many variations of passages of Lorem Ipsum willing araise alteration in some form.
+            </p>
+            <ul class="author-book__list-details">
+              <li class="author-book__item-details">
+                Pages: <br />
+                <span>586 pages</span>
+              </li>
+              <li class="author-book__item-details">Length: <br /><span>10 Hours</span></li>
+            </ul>
+            <Button outline>Order today</Button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
+
 <style>
 .author-book__title::after {
   background: var(--primary-color);
@@ -127,5 +128,4 @@
   font: 400 19px/1.5 var(--primary-font);
   color: var(--body-color);
 }
-
 </style>

@@ -1,59 +1,74 @@
 <template>
-    <section class="testimonial section">
-        <div class="testimonial__container container">
-            <div>
-                <h2 class="title">What Readers Say About the Book</h2>
-                <p class="testimonial__book-description">
-                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.
-                </p>
-                <div class="testimonial__rating">(4.8/5)</div>
-                <p>Overall Customer Ratings</p>
+  <section class="testimonial section">
+    <div class="testimonial__container container">
+      <div>
+        <h2 class="title">What Readers Say About the Book</h2>
+        <p class="testimonial__book-description">
+          If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+          embarrassing hidden in the middle of text. All the Lorem Ipsum generators.
+        </p>
+        <div class="testimonial__rating">(4.8/5)</div>
+        <p>Overall Customer Ratings</p>
+      </div>
+      <div class="testimonial__block">
+        <div class="testimonial__wrapper">
+          <div class="testimonial__user-review">
+            <div class="testimonial__user">
+              <img
+                class="testimonial__user-photo"
+                src="/img/user-photo-one.png"
+                width="85"
+                height="85"
+                alt="User Photo"
+              />
+              <h3 class="testimonial__user-name">Martin Philips</h3>
             </div>
-            <div class="testimonial__block">
-                <div class="testimonial__wrapper">
-                    <div class="testimonial__user-review">
-                        <div class="testimonial__user">
-                            <img class="testimonial__user-photo" src="/img/user-photo-one.png" width="85" height="85"
-                                alt="User Photo" />
-                            <h3 class="testimonial__user-name">Martin Philips</h3>
-                        </div>
-                        <h3 class="testimonial__comment">“Awesome Impact”</h3>
-                        <p class="testimonial__review">
-                            All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
-                            chunks value.
-                        </p>
-                    </div>
-                    <div class="testimonial__user-review">
-                        <div class="testimonial__user">
-                            <img class="testimonial__user-photo" src="/img/user-photo-two.png" width="85" height="85"
-                                alt="User Photo" />
-                            <h3 class="testimonial__user-name">James Anderson</h3>
-                        </div>
-                        <h3 class="testimonial__comment">“Mind Blowing Words”</h3>
-                        <p class="testimonial__review">
-                            All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
-                            chunks value.
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial__wrapper">
-                    <div class="testimonial__user-review">
-                        <div class="testimonial__user">
-                            <img class="testimonial__user-photo" src="/img/user-photo-three.png" width="85" height="85"
-                                alt="User Photo" />
-                            <h3 class="testimonial__user-name">Christina Louis</h3>
-                        </div>
-                        <h3 class="testimonial__comment">“ Great Books Collections”</h3>
-                        <p class="testimonial__review">
-                            All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
-                            chunks value.
-                        </p>
-                    </div>
-                </div>
+            <h3 class="testimonial__comment">“Awesome Impact”</h3>
+            <p class="testimonial__review">
+              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
+              chunks value.
+            </p>
+          </div>
+          <div class="testimonial__user-review">
+            <div class="testimonial__user">
+              <img
+                class="testimonial__user-photo"
+                src="/img/user-photo-two.png"
+                width="85"
+                height="85"
+                alt="User Photo"
+              />
+              <h3 class="testimonial__user-name">James Anderson</h3>
             </div>
+            <h3 class="testimonial__comment">“Mind Blowing Words”</h3>
+            <p class="testimonial__review">
+              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
+              chunks value.
+            </p>
+          </div>
         </div>
-    </section>
+        <div class="testimonial__wrapper">
+          <div class="testimonial__user-review">
+            <div class="testimonial__user">
+              <img
+                class="testimonial__user-photo"
+                src="/img/user-photo-three.png"
+                width="85"
+                height="85"
+                alt="User Photo"
+              />
+              <h3 class="testimonial__user-name">Christina Louis</h3>
+            </div>
+            <h3 class="testimonial__comment">“ Great Books Collections”</h3>
+            <p class="testimonial__review">
+              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
+              chunks value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>

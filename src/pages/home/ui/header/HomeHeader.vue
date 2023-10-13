@@ -3,7 +3,7 @@
     <div class="container header__container">
       <div class="header__container-list">
         <svg class="icon" width="25" height="28">
-          <use href="/sprite.svg#page"></use>
+          <use href="@/assets/images/sprite.svg#page"></use>
         </svg>
         <h1 class="title--logo">Pages</h1>
       </div>
@@ -11,21 +11,21 @@
         <li>
           <a class="social-network-link" href="#">
             <svg class="social-network-icon" Width="18" Height="18">
-              <use href="/sprite.svg#facebook"></use>
+              <use href="@/assets/images/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social-network-link" href="#">
             <svg class="social-network-icon" Width="18" Height="18">
-              <use href="/sprite.svg#twitter"></use>
+              <use href="@/assets/images/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social-network-link" href="#">
             <svg class="social-network-icon" Width="18" Height="18">
-              <use href="/sprite.svg#linkedin"></use>
+              <use href="@/assets/images/sprite.svg#linkedin"></use>
             </svg>
           </a>
         </li>
@@ -50,7 +50,7 @@
           <li class="header__nav-list-badge">
             <a href="#">
               <svg class="header__basket-icon" width="18" height="17">
-                <use href="/sprite.svg#basket"></use>
+                <use href="@/assets/images/sprite.svg#basket"></use>
               </svg>
               <span class="badge">01</span>
             </a>

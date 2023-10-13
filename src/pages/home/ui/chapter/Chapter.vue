@@ -1,69 +1,65 @@
 <template>
-    <section class="chapter section">
-          <div class="chapter__container container">
-            <h2 class="title--center title">The Chapter Includes</h2>
-            <div class="chapter__book-content">
-              <ul class="chapter__book-content-list">
-                <li class="chapter__book-content-items">
-                  <h3 class="chapter__book-content-title">Chapter - 01 Get Started Intro</h3>
-                  <p class="chapter__book-content-description">
-                    Making this the first true value generator on the Internet. It of over 200 Latin
-                    words, combined with a handful.
-                  </p>
-                  <div class="chapter__book-details-wrapper">
-                    <div class="chapter__book-details">Pages: <span>85 pages</span></div>
-                    <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
-                  </div>
-                </li>
-                <li class="chapter__book-content-items">
-                  <h3 class="chapter__book-content-title">Chapter - 02 Create a Massive Content</h3>
-                  <p class="chapter__book-content-description">
-                    Making this the first true value generator on the Internet. It of over 200 Latin
-                    words, combined with a handful.
-                  </p>
-                  <div class="chapter__book-details-wrapper">
-                    <div class="chapter__book-details">Pages: <span>85 pages</span></div>
-                    <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
-                  </div>
-                </li>
-                <li class="chapter__book-content-items">
-                  <h3 class="chapter__book-content-title">
-                    Chapter - 03 Maintaining the Creative Arcs
-                  </h3>
-                  <p class="chapter__book-content-description">
-                    Making this the first true value generator on the Internet. It of over 200 Latin
-                    words, combined with a handful.
-                  </p>
-                  <div class="chapter__book-details-wrapper">
-                    <div class="chapter__book-details">Pages: <span>85 pages</span></div>
-                    <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
-                  </div>
-                </li>
-                <li class="chapter__book-content-items">
-                  <h3 class="chapter__book-content-title">Chapter - 04 The Conclusion</h3>
-                  <p class="chapter__book-content-description">
-                    Making this the first true value generator on the Internet. It of over 200 Latin
-                    words, combined with a handful.
-                  </p>
-                  <div class="chapter__book-details-wrapper">
-                    <div class="chapter__book-details">Pages: <span>85 pages</span></div>
-                    <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
-                  </div>
-                </li>
-              </ul>
+  <section class="chapter section">
+    <div class="chapter__container container">
+      <h2 class="title--center title">The Chapter Includes</h2>
+      <div class="chapter__book-content">
+        <ul class="chapter__book-content-list">
+          <li class="chapter__book-content-items">
+            <h3 class="chapter__book-content-title">Chapter - 01 Get Started Intro</h3>
+            <p class="chapter__book-content-description">
+              Making this the first true value generator on the Internet. It of over 200 Latin
+              words, combined with a handful.
+            </p>
+            <div class="chapter__book-details-wrapper">
+              <div class="chapter__book-details">Pages: <span>85 pages</span></div>
+              <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
             </div>
-            <div class="chapter__subscription">
-              <button type="button" class="chapter__button button">Start a 15-Days Free Trial</button>
-              <p>
-                Short description about each chapter <br /><a
-                  class="chapter__subscription-link"
-                  href="#"
-                  >Have any questions? </a
-                >Contact us!
-              </p>
+          </li>
+          <li class="chapter__book-content-items">
+            <h3 class="chapter__book-content-title">Chapter - 02 Create a Massive Content</h3>
+            <p class="chapter__book-content-description">
+              Making this the first true value generator on the Internet. It of over 200 Latin
+              words, combined with a handful.
+            </p>
+            <div class="chapter__book-details-wrapper">
+              <div class="chapter__book-details">Pages: <span>85 pages</span></div>
+              <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
             </div>
-          </div>
-        </section>
+          </li>
+          <li class="chapter__book-content-items">
+            <h3 class="chapter__book-content-title">Chapter - 03 Maintaining the Creative Arcs</h3>
+            <p class="chapter__book-content-description">
+              Making this the first true value generator on the Internet. It of over 200 Latin
+              words, combined with a handful.
+            </p>
+            <div class="chapter__book-details-wrapper">
+              <div class="chapter__book-details">Pages: <span>85 pages</span></div>
+              <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
+            </div>
+          </li>
+          <li class="chapter__book-content-items">
+            <h3 class="chapter__book-content-title">Chapter - 04 The Conclusion</h3>
+            <p class="chapter__book-content-description">
+              Making this the first true value generator on the Internet. It of over 200 Latin
+              words, combined with a handful.
+            </p>
+            <div class="chapter__book-details-wrapper">
+              <div class="chapter__book-details">Pages: <span>85 pages</span></div>
+              <div class="chapter__book-details">Length: <span>1 Hour 15 mins</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="chapter__subscription">
+        <button type="button" class="chapter__button button">Start a 15-Days Free Trial</button>
+        <p>
+          Short description about each chapter <br /><a class="chapter__subscription-link" href="#"
+            >Have any questions? </a
+          >Contact us!
+        </p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>
