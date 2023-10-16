@@ -11,28 +11,28 @@
         <ul class="footer__social-network-list">
           <li>
             <a class="social-network-link social-link--secondary" href="#">
-              <svg class="social-network-icon--footer" Width="18" Height="18">
+              <svg class="social-network-icon--footer" width="18" height="18">
                 <use href="@/assets/images/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social-network-link social-link--secondary" href="#">
-              <svg class="social-network-icon--footer" Width="18" Height="18">
+              <svg class="social-network-icon--footer" width="18" height="18">
                 <use href="@/assets/images/sprite.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social-network-link social-link--secondary" href="#">
-              <svg class="social-network-icon--footer" Width="18" Height="18">
+              <svg class="social-network-icon--footer" width="18" height="18">
                 <use href="@/assets/images/sprite.svg#linkedin"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social-network-link social-link--secondary" href="#">
-              <svg class="social-network-icon--footer" Width="18" Height="18">
+              <svg class="social-network-icon--footer" width="18" height="18">
                 <use href="@/assets/images/sprite.svg#instagram"></use>
               </svg>
             </a>

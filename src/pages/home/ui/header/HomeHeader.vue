@@ -10,21 +10,21 @@
       <ul class="header__social-network-list">
         <li>
           <a class="social-network-link" href="#">
-            <svg class="social-network-icon" Width="18" Height="18">
+            <svg class="social-network-icon" width="18" Height="18">
               <use href="@/assets/images/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social-network-link" href="#">
-            <svg class="social-network-icon" Width="18" Height="18">
+            <svg class="social-network-icon" width="18" Height="18">
               <use href="@/assets/images/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li>
           <a class="social-network-link" href="#">
-            <svg class="social-network-icon" Width="18" Height="18">
+            <svg class="social-network-icon" width="18" Height="18">
               <use href="@/assets/images/sprite.svg#linkedin"></use>
             </svg>
           </a>
