@@ -82,9 +82,8 @@
 .about-writer__list-data-item {
   position: relative;
   padding: 0 20px;
-}
 
-.about-writer__list-data-item:not(:last-child)::before {
+  &:not(:last-child)::before {
   content: '';
   position: absolute;
   top: 0;
@@ -94,10 +93,10 @@
   width: 2px;
   background-color: var(--primary-color);
 }
-
-.about-writer__list-data-item > span {
+  & > span {
   font: 700 55px/1 var(--secondary-font);
   color: var(--secondary-color);
+}
 }
 
 .about-writer__contact-inf {

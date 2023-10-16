@@ -62,7 +62,7 @@
   </header>
 </template>
 
-<style>
+<style lang="scss">
 .header {
   background-color: var(--secondary-color);
 }
@@ -75,9 +75,6 @@
 
 .header__container-list {
   display: flex;
-}
-
-.header__container-list {
   margin-right: 25px;
 }
 
@@ -85,12 +82,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.header__social-network-list > li:not(:last-child) {
+  & > li:not(:last-child) {
   margin-right: 10px;
 }
-
+}
 .header__navigation {
   margin-left: auto;
 }
@@ -110,10 +106,10 @@
   font-size: 17px;
   line-height: 22px;
   transition: color 250ms var(--timing-function);
-}
 
-.header__nav-link:hover {
+  &:hover {
   color: var(--primary-color);
+}
 }
 
 .header__basket-icon {

@@ -4,12 +4,7 @@
       <h2 class="title--center title">Author’s Book Includes</h2>
       <ul class="author-book__list">
         <li class="author-book__item">
-          <img
-            src="/img/atomic-one-book.png"
-            alt="Atomic One's Book Title"
-            width="300"
-            height="400"
-          />
+          <img src="/img/atomic-one-book.png" alt="Atomic One's Book Title" width="300" height="400" />
           <div class="author-book__item-information">
             <h3 class="author-book__book-title">Atomic One’s</h3>
             <p class="author-book__book-describe">
@@ -29,12 +24,7 @@
           </div>
         </li>
         <li class="author-book__item">
-          <img
-            src="/img/light-front-page.png"
-            alt="The Dark Light Title"
-            width="300"
-            height="400"
-          />
+          <img src="/img/light-front-page.png" alt="The Dark Light Title" width="300" height="400" />
           <div class="author-book__item-information">
             <h3 class="author-book__book-title">The Dark Light</h3>
             <p class="author-book__book-describe">
@@ -55,7 +45,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .author-book__title::after {
   background: var(--primary-color);
   content: '';
@@ -77,11 +67,11 @@
   flex-basis: calc((100% - 60px) / 2);
   margin-top: 30px;
   margin-left: 30px;
-}
 
-.author-book__item > img {
-  border: 8px solid var(--border-color-card);
-  margin-right: 50px;
+  &>img {
+    border: 8px solid var(--border-color-card);
+    margin-right: 50px;
+  }
 }
 
 .author-book__item-information {
@@ -110,22 +100,22 @@
   font: 700 24px/1.5 var(--secondary-font);
   color: var(--secondary-color);
   margin-bottom: 30px;
-}
 
-.author-book__item-details::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-}
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+  }
 
-.author-book__item-details > span {
-  font: 400 19px/1.5 var(--primary-font);
-  color: var(--body-color);
+  & > span {
+    font: 400 19px/1.5 var(--primary-font);
+    color: var(--body-color);
+  }
 }
 </style>

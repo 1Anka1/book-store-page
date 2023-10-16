@@ -62,7 +62,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .chapter {
   background-color: var(--background-color);
 }
@@ -102,9 +102,8 @@
   font-weight: 700;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-}
 
-.chapter__book-details::before {
+  &::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -115,10 +114,10 @@
   background-color: var(--primary-color);
   border-radius: 50%;
 }
-
-.chapter__book-details > span {
+  & > span {
   font-family: var(--primary-font);
   color: var(--body-color);
+}
 }
 
 .chapter__book-content {

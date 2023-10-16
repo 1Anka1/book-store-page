@@ -111,7 +111,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .footer {
   padding: 50px;
   background-color: var(--secondary-color);
@@ -134,16 +134,14 @@
 
 .footer__social-network-list {
   display: flex;
-}
 
-.footer__social-network-list > li {
+  & > li {
   border: 1px solid var(--primary-color);
 }
-
-.footer__social-network-list > li:not(:last-child) {
+  & > li:not(:last-child) {
   margin-right: 10px;
 }
-
+}
 .footer__wrapper:not(:first-child) {
   display: flex;
   margin-left: auto;
@@ -161,10 +159,10 @@
 .footer__header__nav-link {
   color: var(--light-color);
   transition: color 250ms var(--timing-function);
-}
 
-.footer__header__nav-link:hover {
+  &:hover {
   color: var(--primary-text-color);
+}
 }
 
 .footer__address-list-link {

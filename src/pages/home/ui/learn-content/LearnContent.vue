@@ -31,7 +31,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .learn-content__wrapper {
   display: flex;
   justify-content: center;
@@ -49,9 +49,8 @@
   font: 700 15px/1.5 var(--secondary-font);
   color: var(--secondary-color);
   padding: 40px 30px;
-}
-
-.learn-content__info-items > span {
+  
+  & > span {
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -61,14 +60,14 @@
   background-color: var(--primary-color);
   border-radius: 50%;
 }
+}
 
 .learn-content__woman-photo {
   margin-left: 100px;
   position: relative;
   z-index: 1;
-}
-
-.learn-content__woman-photo::before {
+  
+  &::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -77,5 +76,6 @@
   height: 100%;
   width: 100%;
   border: 15px solid var(--primary-color);
+}
 }
 </style>

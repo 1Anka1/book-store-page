@@ -23,7 +23,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .banner {
   background-color: var(--secondary-color);
 }
@@ -41,15 +41,15 @@
   align-items: center;
   font: 400 italic 20px/1.5 var(--secondary-font);
   margin-bottom: 15px;
-}
 
-.banner__welcome::before {
+  &::before {
   background: var(--primary-color);
   content: '';
   display: block;
   width: 34px;
   height: 1px;
   margin-right: 10px;
+}
 }
 
 .banner__title {
@@ -69,28 +69,22 @@
   border-bottom: 1px solid var(--primary-text-color);
   transition: color 250ms var(--timing-function);
   color: var(--primary-text-color);
-}
 
-.banner__read-link:hover {
+  &:hover {
   color: var(--primary-color);
+}
 }
 
 .banner__book-list {
   display: flex;
   justify-content: space-between;
-}
 
-.banner__book-list > li {
+  & > li {
   display: block;
   padding-left: 20px;
   position: relative;
 }
-
-.banner__button {
-  margin: 0 30px 30px 0;
-}
-
-.banner__book-list > li::before {
+  & > li::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -100,6 +94,11 @@
   margin-right: 10px;
   background-color: var(--primary-color);
   border-radius: 50%;
+}
+}
+
+.banner__button {
+  margin: 0 30px 30px 0;
 }
 
 .banner__book-list-item {
@@ -111,10 +110,10 @@
   opacity: 0.7;
   transition: opacity 250ms var(--timing-function);
   background-image: url('/img/dark-front-page.png');
-}
 
-.banner__book-img:hover {
+  &:hover {
   opacity: 1;
   content: url('/img/light-front-page.png');
+}
 }
 </style>

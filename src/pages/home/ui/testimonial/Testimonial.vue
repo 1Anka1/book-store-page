@@ -71,7 +71,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .testimonial__container {
   display: grid;
   gap: 110px;
@@ -90,9 +90,8 @@
   font: 700 20px/1.5 var(--secondary-font);
   color: var(--secondary-color);
   margin-bottom: 5px;
-}
 
-.testimonial__rating::before {
+  &::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -102,6 +101,7 @@
   margin-right: 10px;
   background-color: var(--primary-color);
   border-radius: 50%;
+}
 }
 
 .testimonial__block {

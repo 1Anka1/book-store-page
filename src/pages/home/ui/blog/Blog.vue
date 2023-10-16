@@ -72,7 +72,7 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .blog {
   background-color: var(--background-color);
 }
@@ -115,10 +115,10 @@
   color: var(--secondary-color);
   text-decoration: underline;
   transition: color 250ms var(--timing-function);
-}
 
-.blog__article-readmore:hover {
+  &:hover {
   color: var(--primary-color);
   text-decoration: none;
+}
 }
 </style>

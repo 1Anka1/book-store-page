@@ -26,7 +26,7 @@ withDefaults(
 );
 </script>
 
-<style>
+<style lang="scss">
 .button {
   background-color: var(--primary-color);
   border: 1px solid transparent;
@@ -36,30 +36,31 @@ withDefaults(
   cursor: pointer;
   transition: all 0.25s var(--timing-function);
   transition-property: background-color, border-color, color;
-}
 
-.button:hover {
+  &:hover {
   color: var(--primary-color);
-}
-
-.button:hover,
-.button--outline {
   background: none;
   border-color: var(--primary-color);
 }
+}
 
-.button--outline:hover {
+.button--outline {
+  background: none;
+  border-color: var(--primary-color);
+  
+  &:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
 }
 
 .button--secondary {
   background-color: var(--secondary-color);
   color: var(--primary-text-color);
-}
 
-.button--secondary:hover {
+  &:hover {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
 }
 </style>
