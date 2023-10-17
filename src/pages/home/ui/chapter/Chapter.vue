@@ -1,7 +1,7 @@
 <template>
   <section class="chapter section">
     <div class="chapter__container container">
-      <h2 class="title--center title">The Chapter Includes</h2>
+      <Title center>The Chapter Includes</Title>
       <div class="chapter__book-content">
         <ul class="chapter__book-content-list">
           <li class="chapter__book-content-items">
@@ -51,7 +51,7 @@
         </ul>
       </div>
       <div class="chapter__subscription">
-        <button type="button" class="chapter__button button">Start a 15-Days Free Trial</button>
+        <Button class="chapter__button">Start a 15-Days Free Trial</Button>
         <p>
           Short description about each chapter <br /><a class="chapter__subscription-link" href="#"
             >Have any questions? </a

@@ -21,7 +21,7 @@ withDefaults(
   }>(),
   {
     color: 'primary',
-    outline: true,
+    outline: false,
   },
 );
 </script>

@@ -1,7 +1,7 @@
 <template>
   <section class="learn-content section">
     <div class="learn-content__container container">
-      <h2 class="title--center title">What will you learn?</h2>
+      <Title center>What will you learn?</Title>
       <div class="learn-content__wrapper">
         <div class="learn-content__info-capsule">
           <ul class="learn-content__info-list">

@@ -6,7 +6,7 @@
           <svg class="icon" width="25" height="28">
             <use href="@/assets/images/sprite.svg#page"></use>
           </svg>
-          <h1 class="footer__container-title">Pages</h1>
+          <h1 class="title--light">Pages</h1>
         </div>
         <ul class="footer__social-network-list">
           <li>
@@ -121,9 +121,9 @@
   display: flex;
 }
 
-.footer__container-title {
-  color: var(--primary-text-color);
-}
+// .footer__container-title {
+//   color: var(--primary-text-color);
+// }
 
 .footer__container-list {
   display: flex;

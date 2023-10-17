@@ -2,7 +2,7 @@
   <section class="testimonial section">
     <div class="testimonial__container container">
       <div>
-        <h2 class="title">What Readers Say About the Book</h2>
+        <Title>What Readers Say About the Book</Title>
         <p class="testimonial__book-description">
           If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
           embarrassing hidden in the middle of text. All the Lorem Ipsum generators.

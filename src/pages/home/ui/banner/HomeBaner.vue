@@ -8,7 +8,7 @@
           There are many variations of passages of Lorem Ipsum available, but the majority have
           suffered alteration in some form.
         </p>
-        <button type="button" class="banner__button button">Order today</button>
+        <Button class="banner__button">Order today</Button>
         <a class="banner__read-link" href="#">Read Free Demo</a>
         <ul class="banner__book-list">
           <li>Pages: <br /><span class="banner__book-list-item">586 pages</span></li>

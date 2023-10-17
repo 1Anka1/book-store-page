@@ -5,6 +5,7 @@
         <svg class="icon" width="25" height="28">
           <use href="@/assets/images/sprite.svg#page"></use>
         </svg>
+        
         <h1 class="title--logo">Pages</h1>
       </div>
       <ul class="header__social-network-list">
@@ -57,7 +58,7 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="button">Order Today</button>
+      <Button>Order Today</Button>
     </div>
   </header>
 </template>

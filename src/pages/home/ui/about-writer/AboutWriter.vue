@@ -5,7 +5,7 @@
         <img src="/img/author.jpg" alt="Author of book" width="550" height="650" />
       </div>
       <div class="about-writer__author-details">
-        <h2 class="title">About Author</h2>
+        <Title>About Author</Title>
         <p class="about-writer__information">
           All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as
           necessary, making this the first true value generator on the Internet. It uses a

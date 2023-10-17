@@ -1,7 +1,7 @@
 <template>
   <section class="author-book section">
     <div class="author-book__container container">
-      <h2 class="title--center title">Author’s Book Includes</h2>
+      <Title center>Author’s Book Includes</Title>
       <ul class="author-book__list">
         <li class="author-book__item">
           <img src="/img/atomic-one-book.png" alt="Atomic One's Book Title" width="300" height="400" />

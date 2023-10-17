@@ -2,7 +2,7 @@
   <section class="subscription section">
     <div class="subscription__container container">
       <div class="subscription__wrapper">
-        <h2 class="title title--blue title--center">Read a free chapter</h2>
+        <Title center color="blue">Read a free chapter</Title>
         <p class="subscription__description">
           Making this the first true value generator on the Internet. It of over 200 Latin words,
           combined with a handful.
@@ -15,9 +15,7 @@
             aria-label="Your Email id"
             aria-describedby="button-addon2"
           />
-          <button class="button button--secondary" type="button" id="button-addon2">
-            Subscribe
-          </button>
+          <Button color='secondary'>Subscribe</Button>
         </div>
       </div>
     </div>

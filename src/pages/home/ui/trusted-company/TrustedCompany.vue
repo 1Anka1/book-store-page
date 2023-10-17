@@ -1,7 +1,7 @@
 <template>
   <section class="trusted-company section">
     <div class="container">
-      <h2 class="title--center title">Trusted by the Best</h2>
+      <Title center>Trusted by the Best</Title>
       <div class="trusted-company__company-wrapper">
         <ul class="trusted-company__company-list">
           <li class="trusted-company__company-items">

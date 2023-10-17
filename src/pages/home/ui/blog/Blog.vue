@@ -1,7 +1,7 @@
 <template>
   <section class="blog section">
     <div class="blog__container container">
-      <h2 class="title title--center">Articles & Resources</h2>
+      <Title center>Articles & Resources</Title>
       <div class="blog__article-wrapper">
         <ul class="blog__article-list">
           <li class="blog__article-items">
