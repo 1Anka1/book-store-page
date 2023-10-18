@@ -5,8 +5,7 @@
         <svg class="icon" width="25" height="28">
           <use href="@/assets/images/sprite.svg#page"></use>
         </svg>
-        
-        <h1 class="title--logo">Pages</h1>
+        <h1 class="caption--logo">Pages</h1>
       </div>
       <ul class="header__social-network-list">
         <li>

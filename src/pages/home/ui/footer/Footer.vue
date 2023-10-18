@@ -6,7 +6,7 @@
           <svg class="icon" width="25" height="28">
             <use href="@/assets/images/sprite.svg#page"></use>
           </svg>
-          <h1 class="title--light">Pages</h1>
+          <h1 class="title--light caption--logo">Pages</h1>
         </div>
         <ul class="footer__social-network-list">
           <li>
@@ -92,13 +92,11 @@
               >Address :
               <span class="footer__address-list-link-info"
                 >24A Kingston St, Los Vegas NC 28202, USA.</span
-              ></a
-            >
+              ></a>
           </li>
           <li class="footer__list-item">
             <a class="footer__address-list-link" href="mailto:support@doctors.com">
-              Mail : <span class="footer__address-list-link-info">support@doctors.com</span></a
-            >
+              Mail : <span class="footer__address-list-link-info">support@doctors.com</span></a>
           </li>
           <li class="footer__list-item">
             <a class="footer__address-list-link" href="tel:(+22)1234567900">
@@ -186,5 +184,9 @@
   border-radius: 50%;
   padding: 2px 4px;
   font: 800 8px/1.5 var(--primary-font);
+}
+.caption--logo {
+    color: var(--primary-text-color);
+    font-size: 23px;
 }
 </style>

@@ -56,13 +56,4 @@ defineProps<{
     height: 3px;
     margin: 22px 0px;
 }
-
-.title--logo {
-    color: var(--primary-text-color);
-    font-size: 23px;
-}
-
-.title--logo-blue {
-    color: var(--secondary-color);
-}
 </style>
