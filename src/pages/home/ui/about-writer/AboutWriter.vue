@@ -22,17 +22,17 @@
           </li>
           <li class="about-writer__list-data-item"><span>04</span> <br />Best Seller Awards</li>
         </ul>
-        <div class="about-writer__contact-inf">
+        <div class="about-writer__contact-info">
           <img src="/img/QR-code.jpg" alt="QR-code" />
-          <ul class="about-writer__contact-inf-list">
-            <li class="about-writer__contact-inf-item">John Abraham , Ph.d</li>
+          <ul class="about-writer__contact-info-list">
+            <li class="about-writer__contact-info-item">John Abraham , Ph.d</li>
             <li>
-              <a href="mailto:johnabraham@gmail.com" class="about-writer__contact-inf-list-link">
+              <a href="mailto:johnabraham@gmail.com" class="about-writer__contact-info-list-link">
                 Mail : johnabraham@gmail.com
               </a>
             </li>
             <li>
-              <a href="tel:(+2) 123 545 9000" class="about-writer__contact-inf-list-link">
+              <a href="tel:(+2) 123 545 9000" class="about-writer__contact-info-list-link">
                 Phone : (+2) 123 545 9000
               </a>
             </li>
@@ -84,38 +84,39 @@
   padding: 0 20px;
 
   &:not(:last-child)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  height: 100%;
-  width: 2px;
-  background-color: var(--primary-color);
-}
-  & > span {
-  font: 700 55px/1 var(--secondary-font);
-  color: var(--secondary-color);
-}
-}
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+  }
 
-.about-writer__contact-inf {
-  display: flex;
-  background-color: var(--secondary-color);
-  padding: 15px;
-}
+  > span {
+    font: 700 55px/1 var(--secondary-font);
+    color: var(--secondary-color);
+  }
 
-.about-writer__contact-inf-list {
-  justify-content: center;
-  padding: 20px;
-}
+  &__contact-info {
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 15px;
+  }
 
-.about-writer__contact-inf-item {
-  font: 700 22px/1.5 var(--secondary-font);
-  color: var(--primary-color);
-}
+  &__contact-info-list {
+    justify-content: center;
+    padding: 20px;
+  }
 
-.about-writer__contact-inf-list-link {
-  color: var(--light-color);
+  &__contact-info-item {
+    font: 700 22px/1.5 var(--secondary-font);
+    color: var(--primary-color);
+  }
+
+  &__contact-info-list-link {
+    color: var(--light-color);
+  }
 }
 </style>

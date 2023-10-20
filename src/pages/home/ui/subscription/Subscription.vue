@@ -8,19 +8,31 @@
           combined with a handful.
         </p>
         <div class="subscription__input-group">
-          <input
+          <Input
+            v-model="email"
             type="email"
             class="form-control"
             placeholder="Your Email id"
             aria-label="Your Email id"
             aria-describedby="button-addon2"
+            @enter="subscribe"
           />
-          <Button color='secondary'>Subscribe</Button>
+          <Button color="secondary" @click="subscribe">Subscribe</Button>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const email = ref('');
+
+const subscribe = () => {
+  console.log(email.value);
+};
+</script>
 
 <style>
 .subscription__wrapper {

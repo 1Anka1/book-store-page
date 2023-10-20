@@ -1,59 +1,57 @@
 <template>
-    <h1 class="title" :class="[
-        {
-            'title--center': center,
-            // 'title--logo':logo,
-            // [`title--logo-&{color}`]: color,
-            [`title--${color}`]: color,
-        },
+  <div
+    class="title"
+    :class="[
+      {
+        'title--center': center,
+        [`title--${color}`]: color,
+      },
     ]"
-    ><slot />
-</h1>
+  >
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-    center?: boolean;
-    // logo?: boolean;
-    color?: 'light' | 'blue';
+  center?: boolean;
+  color?: 'light' | 'blue';
 }>();
 </script>
 
-<style lang="scss">
-
+<style scoped lang="scss">
 .title {
-    font-family: var(--secondary-font), serif;
-    color: var(--secondary-color);
-    margin: 0 0 22px;
-    font-size: 40px;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+  font-size: 40px;
+  padding-bottom: 10px;
+  position: relative;
 
-    &::after {
-        background: var(--primary-color);
-        content: '';
-        display: block;
-        width: 55px;
-        height: 3px;
-        margin: 22px 0px;
-    }
-}
-
-.title--center {
+  &--center {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
-}
+  }
 
-.title--light {
-    color: var(--primary-text-color);
-}
-
-.title--blue::after {
-    background: var(--secondary-color);
-    content: '';
+  &::after {
+    position: absolute;
     display: block;
+    content: '';
+    top: 100%;
+    background: var(--primary-color);
     width: 55px;
     height: 3px;
-    margin: 22px 0px;
+  }
+
+  &--light {
+    color: var(--primary-text-color);
+  }
+
+  &--blue {
+    &::after {
+      background: var(--secondary-color);
+    }
+  }
 }
 </style>
