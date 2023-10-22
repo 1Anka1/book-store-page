@@ -12,8 +12,8 @@
             v-model="email"
             type="email"
             class="form-control"
-            placeholder="Your Email id"
-            aria-label="Your Email id"
+            placeholder="Your Email"
+            aria-label="Your Email"
             aria-describedby="button-addon2"
             @enter="subscribe"
           />
