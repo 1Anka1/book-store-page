@@ -72,78 +72,80 @@
 </template>
 
 <style lang="scss">
-.testimonial__container {
-  display: grid;
-  gap: 110px;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
+.testimonial {
+  &__container {
+    display: grid;
+    gap: 110px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
-.testimonial__book-description {
-  margin-bottom: 30px;
-}
+  &__book-description {
+    margin-bottom: 30px;
+  }
 
-.testimonial__rating {
-  display: block;
-  padding-left: 25px;
-  position: relative;
-  font: 700 20px/1.5 var(--secondary-font);
-  color: var(--secondary-color);
-  margin-bottom: 5px;
+  &__rating {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    font: 700 20px/1.5 var(--secondary-font);
+    color: var(--secondary-color);
+    margin-bottom: 5px;
 
-  &::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-}
-}
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+  }
 
-.testimonial__block {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
-.testimonial__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-.testimonial__user-photo {
-  border-radius: 50%;
-}
+  &__user-photo {
+    border-radius: 50%;
+  }
 
-.testimonial__user-review {
-  padding: 20px 15px;
-  background-color: var(--secondary-color);
-}
+  &__user-review {
+    padding: 20px 15px;
+    background-color: var(--secondary-color);
+  }
 
-.testimonial__review {
-  color: var(--light-color);
-}
+  &__review {
+    color: var(--light-color);
+  }
 
-.testimonial__user {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
 
-.testimonial__user-name {
-  margin-left: 15px;
-  font: 700 20px/1.5 var(--secondary-font);
-  color: var(--primary-text-color);
-}
+  &__user-name {
+    margin-left: 15px;
+    font: 700 20px/1.5 var(--secondary-font);
+    color: var(--primary-text-color);
+  }
 
-.testimonial__comment {
-  color: var(--primary-text-color);
-  font: 700 15px/1.5 var(--secondary-font);
-  margin-bottom: 10px;
+  &__comment {
+    color: var(--primary-text-color);
+    font: 700 15px/1.5 var(--secondary-font);
+    margin-bottom: 10px;
+  }
 }
 </style>

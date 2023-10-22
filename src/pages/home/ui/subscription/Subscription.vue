@@ -34,23 +34,25 @@ const subscribe = () => {
 };
 </script>
 
-<style>
-.subscription__wrapper {
-  background-color: var(--primary-color);
-  text-align: center;
-  color: var(--secondary-color);
-  padding: 100px;
-}
+<style lang="scss">
+.subscription {
+  &__wrapper {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 100px;
+  }
 
-.subscription__description {
-  width: 500px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
+  &__description {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 
-.subscription__input-group {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  &__input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 </style>

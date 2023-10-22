@@ -65,76 +65,75 @@
 <style lang="scss">
 .chapter {
   background-color: var(--background-color);
-}
+  &__book-content-list {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
-.chapter__book-content-list {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
+  &__book-content-items {
+    padding: 40px 50px;
+    background-color: var(--primary-text-color);
+  }
 
-.chapter__book-content-items {
-  padding: 40px 50px;
-  background-color: var(--primary-text-color);
-}
+  &__book-content-title {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font: 700 20px/1.5 var(--secondary-font);
+  }
 
-.chapter__book-content-title {
-  color: var(--secondary-color);
-  margin-bottom: 10px;
-  font: 700 20px/1.5 var(--secondary-font);
-}
+  &__book-content-description {
+    margin-bottom: 20px;
+  }
 
-.chapter__book-content-description {
-  margin-bottom: 20px;
-}
+  &__book-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.chapter__book-details-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+  &__book-details {
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
 
-.chapter__book-details {
-  display: block;
-  padding-left: 20px;
-  position: relative;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+    & > span {
+      font-family: var(--primary-font);
+      color: var(--body-color);
+    }
+  }
 
-  &::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-}
-  & > span {
-  font-family: var(--primary-font);
-  color: var(--body-color);
-}
-}
+  &__book-content {
+    margin-bottom: 80px;
+  }
 
-.chapter__book-content {
-  margin-bottom: 80px;
-}
+  &__subscription {
+    text-align: center;
+  }
 
-.chapter__subscription {
-  text-align: center;
-}
+  &__button {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+  }
 
-.chapter__button {
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-bottom: 30px;
-}
-
-.chapter__subscription-link {
-  color: var(--secondary-color);
+  &__subscription-link {
+    color: var(--secondary-color);
+  }
 }
 </style>

@@ -32,50 +32,52 @@
 </template>
 
 <style lang="scss">
-.learn-content__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.learn-content {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.learn-content__info-list {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(2, 290px);
-}
+  &__info-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 290px);
+  }
 
-.learn-content__info-items {
-  background-color: var(--background-color);
-  font: 700 15px/1.5 var(--secondary-font);
-  color: var(--secondary-color);
-  padding: 40px 30px;
-  
-  & > span {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-}
-}
+  &__info-items {
+    background-color: var(--background-color);
+    font: 700 15px/1.5 var(--secondary-font);
+    color: var(--secondary-color);
+    padding: 40px 30px;
 
-.learn-content__woman-photo {
-  margin-left: 100px;
-  position: relative;
-  z-index: 1;
-  
-  &::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  height: 100%;
-  width: 100%;
-  border: 15px solid var(--primary-color);
-}
+    & > span {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+  }
+
+  &__woman-photo {
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      height: 100%;
+      width: 100%;
+      border: 15px solid var(--primary-color);
+    }
+  }
 }
 </style>

@@ -67,36 +67,36 @@
   &__container {
     display: flex;
   }
-}
 
-.about-writer__author-details {
-  max-width: 600px;
-}
-
-.about-writer__list-data {
-  display: flex;
-  align-items: center;
-  margin: 20px -20px 40px;
-}
-
-.about-writer__list-data-item {
-  position: relative;
-  padding: 0 20px;
-
-  &:not(:last-child)::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    height: 100%;
-    width: 2px;
-    background-color: var(--primary-color);
+  &__author-details {
+    max-width: 600px;
   }
 
-  > span {
-    font: 700 55px/1 var(--secondary-font);
-    color: var(--secondary-color);
+  &__list-data {
+    display: flex;
+    align-items: center;
+    margin: 20px -20px 40px;
+  }
+
+  &__list-data-item {
+    position: relative;
+    padding: 0 20px;
+
+    &:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      height: 100%;
+      width: 2px;
+      background-color: var(--primary-color);
+    }
+
+    & > span {
+      font: 700 55px/1 var(--secondary-font);
+      color: var(--secondary-color);
+    }
   }
 
   &__contact-info {

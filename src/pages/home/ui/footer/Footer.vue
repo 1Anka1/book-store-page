@@ -1,5 +1,5 @@
 <template>
-  <section class="footer section">
+  <section class="footer">
     <div class="footer__container container">
       <div>
         <div class="footer__container-list">
@@ -41,7 +41,7 @@
       </div>
       <div class="footer__wrapper">
         <ul class="footer__nav-link-list">
-          <h3 class="footer__title title--light title--light">Explore</h3>
+          <h3 class="footer__title">Explore</h3>
           <li class="footer__list-item">
             <a class="footer__header__nav-link" href="#">Home</a>
           </li>
@@ -62,7 +62,7 @@
           </li>
         </ul>
         <ul class="footer__nav-link-list">
-          <h3 class="footer__title title--light">Utility Pages</h3>
+          <h3 class="footer__title">Utility Pages</h3>
           <li class="footer__list-item">
             <a class="footer__header__nav-link" href="#">Start here</a>
           </li>
@@ -83,7 +83,7 @@
           </li>
         </ul>
         <ul class="footer__address-list">
-          <h3 class="footer__title title--light">Keep in Touch</h3>
+          <h3 class="footer__title">Keep in Touch</h3>
           <li class="footer__list-item">
             <a
               class="footer__address-list-link"
@@ -92,11 +92,13 @@
               >Address :
               <span class="footer__address-list-link-info"
                 >24A Kingston St, Los Vegas NC 28202, USA.</span
-              ></a>
+              ></a
+            >
           </li>
           <li class="footer__list-item">
             <a class="footer__address-list-link" href="mailto:support@doctors.com">
-              Mail : <span class="footer__address-list-link-info">support@doctors.com</span></a>
+              Mail : <span class="footer__address-list-link-info">support@doctors.com</span></a
+            >
           </li>
           <li class="footer__list-item">
             <a class="footer__address-list-link" href="tel:(+22)1234567900">
@@ -111,82 +113,59 @@
 
 <style lang="scss">
 .footer {
-  padding: 50px;
   background-color: var(--secondary-color);
-}
+  &__container {
+    display: flex;
+  }
+  &__container-list {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    color: var(--secondary-color);
+  }
+  &__social-network-list {
+    display: flex;
 
-.footer__container {
-  display: flex;
-}
+    & > li {
+      border: 1px solid var(--primary-color);
+    }
+    & > li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__wrapper:not(:first-child) {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+  &__list-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+  }
+  &__header__nav-link {
+    color: var(--light-color);
+    transition: color 250ms var(--timing-function);
 
-// .footer__container-title {
-//   color: var(--primary-text-color);
-// }
-
-.footer__container-list {
-  display: flex;
-  margin-bottom: 20px;
-  align-items: center;
-  color: var(--secondary-color);
-}
-
-.footer__social-network-list {
-  display: flex;
-
-  & > li {
-  border: 1px solid var(--primary-color);
-}
-  & > li:not(:last-child) {
-  margin-right: 10px;
-}
-}
-.footer__wrapper:not(:first-child) {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
-}
-
-.footer__list-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.footer__title {
-  margin-bottom: 20px;
-}
-
-.footer__header__nav-link {
-  color: var(--light-color);
-  transition: color 250ms var(--timing-function);
-
-  &:hover {
-  color: var(--primary-text-color);
-}
-}
-
-.footer__address-list-link {
-  font-weight: 700;
-  font-family: var(--secondary-font);
-  color: var(--primary-text-color);
-}
-
-.footer__address-list-link-info {
-  font-weight: 400;
-  font-family: var(--primary-font);
-  color: var(--light-color);
-}
-
-.badge {
-  position: absolute;
-  top: -7px;
-  right: 21px;
-  background-color: var(--primary-color);
-  color: var(--dark-color);
-  border-radius: 50%;
-  padding: 2px 4px;
-  font: 800 8px/1.5 var(--primary-font);
+    &:hover {
+      color: var(--primary-text-color);
+    }
+  }
+  &__address-list-link {
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    color: var(--primary-text-color);
+  }
+  &__address-list-link-info {
+    font-weight: 400;
+    font-family: var(--primary-font);
+    color: var(--light-color);
+  }
 }
 .caption--logo {
-    color: var(--primary-text-color);
-    font-size: 23px;
+  color: var(--primary-text-color);
+  font-size: 23px;
 }
 </style>

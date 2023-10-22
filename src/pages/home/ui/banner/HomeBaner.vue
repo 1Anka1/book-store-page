@@ -26,94 +26,95 @@
 <style lang="scss">
 .banner {
   background-color: var(--secondary-color);
-}
 
-.banner__container {
-  display: grid;
-  gap: 130px;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  color: var(--primary-text-color);
-}
+  &__container {
+    display: grid;
+    gap: 130px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: var(--primary-text-color);
+  }
 
-.banner__welcome {
-  display: flex;
-  align-items: center;
-  font: 400 italic 20px/1.5 var(--secondary-font);
-  margin-bottom: 15px;
+  &__welcome {
+    display: flex;
+    align-items: center;
+    font: 400 italic 20px/1.5 var(--secondary-font);
+    margin-bottom: 15px;
 
-  &::before {
-  background: var(--primary-color);
-  content: '';
-  display: block;
-  width: 34px;
-  height: 1px;
-  margin-right: 10px;
-}
-}
+    &::before {
+      background: var(--primary-color);
+      content: '';
+      display: block;
+      width: 34px;
+      height: 1px;
+      margin-right: 10px;
+    }
+  }
 
-.banner__title {
-  font: 700 65px/1.2 var(--secondary-font);
-  letter-spacing: -0.02em;
-  margin-bottom: 35px;
-}
+  &__title {
+    font: 700 65px/1.2 var(--secondary-font);
+    letter-spacing: -0.02em;
+    margin-bottom: 35px;
+  }
 
-.banner__book-description {
-  color: var(--light-color);
-  letter-spacing: -0.01em;
-  margin-bottom: 35px;
-}
+  &__book-description {
+    color: var(--light-color);
+    letter-spacing: -0.01em;
+    margin-bottom: 35px;
+  }
 
-.banner__read-link {
-  font: 700 19px/1.5 var(--secondary-font);
-  border-bottom: 1px solid var(--primary-text-color);
-  transition: color 250ms var(--timing-function);
-  color: var(--primary-text-color);
+  &__read-link {
+    font: 700 19px/1.5 var(--secondary-font);
+    border-bottom: 1px solid var(--primary-text-color);
+    transition: color 250ms var(--timing-function);
+    color: var(--primary-text-color);
 
-  &:hover {
-  color: var(--primary-color);
-}
-}
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
 
-.banner__book-list {
-  display: flex;
-  justify-content: space-between;
+  &__book-list {
+    display: flex;
+    justify-content: space-between;
 
-  & > li {
-  display: block;
-  padding-left: 20px;
-  position: relative;
-}
-  & > li::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-}
-}
+    & > li {
+      display: block;
+      padding-left: 20px;
+      position: relative;
+    }
 
-.banner__button {
-  margin: 0 30px 30px 0;
-}
+    & > li::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+  }
 
-.banner__book-list-item {
-  color: var(--light-color);
-}
+  &__button {
+    margin: 0 30px 30px 0;
+  }
 
-.banner__book-img {
-  border: 8px solid var(--border-color-card);
-  opacity: 0.7;
-  transition: opacity 250ms var(--timing-function);
-  background-image: url('/img/dark-front-page.png');
+  &__book-list-item {
+    color: var(--light-color);
+  }
 
-  &:hover {
-  opacity: 1;
-  content: url('/img/light-front-page.png');
-}
+  &__book-img {
+    border: 8px solid var(--border-color-card);
+    opacity: 0.7;
+    transition: opacity 250ms var(--timing-function);
+    background-image: url('/img/dark-front-page.png');
+
+    &:hover {
+      opacity: 1;
+      content: url('/img/light-front-page.png');
+    }
+  }
 }
 </style>

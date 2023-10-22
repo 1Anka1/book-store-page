@@ -52,7 +52,7 @@
               <svg class="header__basket-icon" width="18" height="17">
                 <use href="@/assets/images/sprite.svg#basket"></use>
               </svg>
-              <span class="badge">01</span>
+              <span class="header__badge">01</span>
             </a>
           </li>
         </ul>
@@ -65,54 +65,66 @@
 <style lang="scss">
 .header {
   background-color: var(--secondary-color);
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
 
-.header__container-list {
-  display: flex;
-  margin-right: 25px;
-}
+  &__container-list {
+    display: flex;
+    margin-right: 25px;
+  }
 
-.header__social-network-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__social-network-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  & > li:not(:last-child) {
-  margin-right: 10px;
-}
-}
-.header__navigation {
-  margin-left: auto;
-}
+    & > li:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 
-.header__nav-list {
-  display: flex;
-  column-gap: 30px;
-}
+  &__navigation {
+    margin-left: auto;
+  }
 
-.header__nav-list-badge {
-  position: relative;
-  display: inline-block;
-}
+  &__nav-list {
+    display: flex;
+    column-gap: 30px;
+  }
 
-.header__nav-link {
-  color: #fff;
-  font-size: 17px;
-  line-height: 22px;
-  transition: color 250ms var(--timing-function);
+  &__nav-list-badge {
+    position: relative;
+    display: inline-block;
+  }
 
-  &:hover {
-  color: var(--primary-color);
-}
-}
+  &__nav-link {
+    color: #fff;
+    font-size: 17px;
+    line-height: 22px;
+    transition: color 250ms var(--timing-function);
 
-.header__basket-icon {
-  margin-right: 30px;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__basket-icon {
+    margin-right: 30px;
+  }
+
+  &__badge {
+    position: absolute;
+    top: -7px;
+    right: 21px;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border-radius: 50%;
+    padding: 2px 4px;
+    font: 800 8px/1.5 var(--primary-font);
+  }
 }
 </style>

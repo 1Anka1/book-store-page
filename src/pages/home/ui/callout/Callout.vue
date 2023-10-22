@@ -2,7 +2,7 @@
   <section class="callout section">
     <div class="callout__container container">
       <div class="callout__advert">
-        <Title color='light'>Get Book Copy Today!</Title>
+        <Title color="light">Get Book Copy Today!</Title>
         <p class="callout__advert-description">
           This the first true value generator on the Internet. It uses alphas dictionary of over 200
           Latin words.
@@ -16,23 +16,23 @@
   </section>
 </template>
 
-<style>
+<style lang="scss">
 .callout {
   background-color: var(--secondary-color);
-}
 
-.callout__container {
-  display: grid;
-  gap: 125px;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
+  &__container {
+    display: grid;
+    gap: 125px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
-.callout__advert-description {
-  margin-bottom: 30px;
-}
+  &__advert-description {
+    margin-bottom: 30px;
+  }
 
-.callout__advert-button {
-  color: var(--primary-text-color);
+  &__advert-button {
+    color: var(--primary-text-color);
+  }
 }
 </style>
