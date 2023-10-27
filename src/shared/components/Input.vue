@@ -2,6 +2,7 @@
   <input
     v-model="modelValue"
     :type="type"
+    class="input"
     :placeholder="placeholder"
     @keydown.enter="$emit('enter')"
   />
@@ -17,11 +18,11 @@ defineProps<{
   placeholder?: string;
 }>();
 
-const modelValue = defineModel<string>();
+const modelValue = defineModel<string>({ required: true });
 </script>
 
-<style>
-.form-control {
+<style scoped lang="scss">
+.input {
   width: 40%;
   border: 0px;
   padding: 12px 20px;

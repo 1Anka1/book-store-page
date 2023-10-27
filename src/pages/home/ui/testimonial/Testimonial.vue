@@ -11,65 +11,51 @@
         <p>Overall Customer Ratings</p>
       </div>
       <div class="testimonial__block">
-        <div class="testimonial__wrapper">
-          <div class="testimonial__user-review">
-            <div class="testimonial__user">
-              <img
-                class="testimonial__user-photo"
-                src="/img/user-photo-one.png"
-                width="85"
-                height="85"
-                alt="User Photo"
-              />
-              <h3 class="testimonial__user-name">Martin Philips</h3>
-            </div>
-            <h3 class="testimonial__comment">“Awesome Impact”</h3>
-            <p class="testimonial__review">
-              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
-              chunks value.
-            </p>
+        <div v-show="isLoading">Loading...</div>
+        <div
+          v-for="testimonial in testimonialsStore.testimonialsReaders"
+          :key="testimonial.id"
+          class="testimonial__user-review"
+        >
+          <div class="testimonial__user">
+            <img
+              class="testimonial__user-photo"
+              :src="testimonial.avatar"
+              width="85"
+              height="85"
+              alt="User Photo"
+            />
+            <h3 class="testimonial__user-name">
+              {{ testimonial.first_name }} {{ testimonial.last_name }}
+            </h3>
           </div>
-          <div class="testimonial__user-review">
-            <div class="testimonial__user">
-              <img
-                class="testimonial__user-photo"
-                src="/img/user-photo-two.png"
-                width="85"
-                height="85"
-                alt="User Photo"
-              />
-              <h3 class="testimonial__user-name">James Anderson</h3>
-            </div>
-            <h3 class="testimonial__comment">“Mind Blowing Words”</h3>
-            <p class="testimonial__review">
-              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
-              chunks value.
-            </p>
-          </div>
-        </div>
-        <div class="testimonial__wrapper">
-          <div class="testimonial__user-review">
-            <div class="testimonial__user">
-              <img
-                class="testimonial__user-photo"
-                src="/img/user-photo-three.png"
-                width="85"
-                height="85"
-                alt="User Photo"
-              />
-              <h3 class="testimonial__user-name">Christina Louis</h3>
-            </div>
-            <h3 class="testimonial__comment">“ Great Books Collections”</h3>
-            <p class="testimonial__review">
-              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
-              chunks value.
-            </p>
-          </div>
+          <h3 class="testimonial__comment">“Awesome Impact”</h3>
+          <p class="testimonial__review">
+            All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks
+            value.
+          </p>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import { ref, onBeforeMount } from 'vue';
+import { useTestimonialsStore } from '@/stores/useTestimonialsStore';
+
+const testimonialsStore = useTestimonialsStore();
+
+const isLoading = ref(false);
+
+const fetchTestimonials = async () => {
+  isLoading.value = true;
+  await testimonialsStore.fetchTestimonials();
+  isLoading.value = false;
+};
+
+onBeforeMount(fetchTestimonials);
+</script>
 
 <style lang="scss">
 .testimonial {

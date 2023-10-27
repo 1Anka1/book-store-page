@@ -11,7 +11,6 @@
           <Input
             v-model="email"
             type="email"
-            class="form-control"
             placeholder="Your Email"
             aria-label="Your Email"
             aria-describedby="button-addon2"

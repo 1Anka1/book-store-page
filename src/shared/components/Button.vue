@@ -25,7 +25,7 @@ const { color = 'primary' } = defineProps<{
 }>();
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .button {
   background-color: var(--primary-color);
   border: 1px solid transparent;
