@@ -17,6 +17,16 @@ export default defineConfig({
       dirs: ['src/shared/components'],
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "@/assets/styles/mixins.scss";
+          @import "@/assets/styles/scss-variables.scss";
+        `,
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
