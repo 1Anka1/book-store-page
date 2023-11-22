@@ -74,14 +74,23 @@
   }
 
   &__item {
-    display: flex;
-    flex-basis: calc((100% - 60px) / 2);
     margin-top: 30px;
     margin-left: 30px;
 
+    @include breakpoint($screen-sm) {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include breakpoint($screen-lg) {
+      flex-basis: calc((100% - 60px) / 2);
+    }
     & > img {
       border: 8px solid var(--border-color-card);
-      margin-right: 50px;
+
+      @include breakpoint($screen-sm) {
+        margin-right: 50px;
+      }
     }
   }
 
@@ -102,6 +111,7 @@
 
   &__list-details {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item-details {

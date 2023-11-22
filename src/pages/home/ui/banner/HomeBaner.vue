@@ -116,5 +116,18 @@
       content: url('/img/light-front-page.png');
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    &__title {
+      font-size: 45px;
+    }
+  }
 }
 </style>
