@@ -142,6 +142,7 @@ const isMenuOpen = ref(false);
     display: flex;
     flex-direction: column;
     column-gap: 30px;
+    align-items: center;
 
     @include breakpoint($screen-lg) {
       color: #fff;
@@ -185,6 +186,10 @@ const isMenuOpen = ref(false);
     border-radius: 50%;
     padding: 2px 4px;
     font: 800 8px/1.5 var(--primary-font);
+
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
   }
 
   &__button {
