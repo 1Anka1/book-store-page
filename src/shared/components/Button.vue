@@ -1,7 +1,7 @@
 <template>
   <button
-    type="button"
     class="button"
+    v-bind="{ type }"
     :class="[
       {
         'button--outline': outline,
@@ -19,9 +19,10 @@ defineEmits<{
   click: [];
 }>();
 
-const { color = 'primary' } = defineProps<{
+const { color = 'primary', type = 'button' } = defineProps<{
   outline?: boolean;
   color?: 'primary' | 'secondary';
+  type?: 'button' | 'submit';
 }>();
 </script>
 

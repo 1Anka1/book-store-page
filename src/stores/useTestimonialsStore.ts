@@ -1,6 +1,6 @@
 import { ofetch } from 'ofetch';
 import { defineStore } from 'pinia';
-import { computed, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 
 interface Testimonial {
   id: number;
