@@ -10,7 +10,10 @@
         <div class="subscription__subscription-wrapper">
           <form class="subscription__input-group" @submit.prevent="onSubmit">
             <Field name="email">
-              <Input v-model="email" type="email" placeholder="Your Email" />
+              <Input type="email" placeholder="Your Email" />
+            </Field>
+            <Field name="email">
+              <Select :options="searchBooksToSelect" placeholder="Your Email" />
             </Field>
             <Button type="submit" color="secondary">Subscribe</Button>
           </form>
@@ -21,11 +24,11 @@
 </template>
 
 <script setup lang="ts">
+import { useBook } from '@/entities/book';
 import { useForm } from 'vee-validate';
-import { ref } from 'vue';
 import * as yup from 'yup';
 
-const email = ref('');
+const { searchBooksToSelect } = useBook();
 
 const { handleSubmit } = useForm({
   initialValues: {
