@@ -10,7 +10,7 @@
         <div class="subscription__subscription-wrapper">
           <form class="subscription__input-group" @submit.prevent="onSubmit">
             <Field name="email">
-              <Input type="email" placeholder="Your Email" />
+              <Input v-model="email" type="email" placeholder="Your Email" />
             </Field>
             <Button type="submit" color="secondary">Subscribe</Button>
           </form>
@@ -24,6 +24,8 @@
 import { useForm } from 'vee-validate';
 import { ref } from 'vue';
 import * as yup from 'yup';
+
+const email = ref('');
 
 const { handleSubmit } = useForm({
   initialValues: {

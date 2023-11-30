@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, inject, type Ref } from 'vue';
+import { ref, inject, type Ref, watch } from 'vue';
 
 defineEmits<{
   enter: [];
@@ -42,6 +42,21 @@ const onInput = (event: Event) => {
     field.value.value = value;
   }
 };
+
+watch(
+  () => field?.value.value,
+  () => {
+    if (field?.value.value) {
+      modelValue.value = field.value.value;
+    }
+  },
+);
+
+watch(modelValue, () => {
+  if (modelValue.value && field) {
+    field.value.value = modelValue.value;
+  }
+});
 </script>
 
 <style scoped lang="scss">
