@@ -6,12 +6,18 @@ export const useBook = () => {
   };
 
   const searchBooksToSelect = async (query: string) => {
+    if (query === '') {
+      return [];
+    }
+
     const books = await searchBooks(query);
 
-    return books.map((book) => ({
-      label: book.volumeInfo.title,
-      value: book.id,
-    }));
+    return (
+      books?.map((book) => ({
+        label: book.volumeInfo.title,
+        value: book.id,
+      })) ?? []
+    );
   };
 
   return { searchBooks, searchBooksToSelect };

@@ -12,9 +12,6 @@
             <Field name="email">
               <Input type="email" placeholder="Your Email" />
             </Field>
-            <Field name="email">
-              <Select :options="searchBooksToSelect" placeholder="Your Email" />
-            </Field>
             <Button type="submit" color="secondary">Subscribe</Button>
           </form>
         </div>
@@ -24,11 +21,8 @@
 </template>
 
 <script setup lang="ts">
-import { useBook } from '@/entities/book';
 import { useForm } from 'vee-validate';
 import * as yup from 'yup';
-
-const { searchBooksToSelect } = useBook();
 
 const { handleSubmit } = useForm({
   initialValues: {
@@ -60,6 +54,7 @@ const onSubmit = handleSubmit((values) => {
   }
 
   &__subscription-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
   }
