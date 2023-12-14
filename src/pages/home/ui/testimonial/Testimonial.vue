@@ -94,7 +94,7 @@ onBeforeMount(fetchTestimonials);
   &__block {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
   }
 
   &__wrapper {
@@ -108,6 +108,7 @@ onBeforeMount(fetchTestimonials);
   }
 
   &__user-review {
+    border-radius: 20px;
     padding: 20px 15px;
     background-color: var(--secondary-color);
   }
@@ -119,11 +120,12 @@ onBeforeMount(fetchTestimonials);
   &__user {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
   }
 
   &__user-name {
-    margin-left: 15px;
+    margin-left: 5px;
     font: 700 20px/1.5 var(--secondary-font);
     color: var(--primary-text-color);
   }

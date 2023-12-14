@@ -7,7 +7,7 @@
           This the first true value generator on the Internet. It uses alphas dictionary of over 200
           Latin words.
         </p>
-        <Button outline class="callout__advert-button">Order today</Button>
+        <Button secondary class="callout__advert-button">Order today</Button>
       </div>
       <div>
         <img class="callout__advert-img" src="/img/book-and-coffee.png" alt="Book and coffee" />

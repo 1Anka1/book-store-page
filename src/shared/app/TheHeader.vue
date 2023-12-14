@@ -150,6 +150,7 @@ const isMenuOpen = ref(false);
   }
 
   &__nav-list-badge {
+    top: 10px;
     position: relative;
     display: inline-block;
   }
