@@ -33,16 +33,39 @@
 
 <style lang="scss">
 .learn-content {
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @include breakpoint($screen-md) {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__woman-photo {
+    margin-left: 50px;
+
+    @include breakpoint($screen-lg) {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        height: 100%;
+        width: 100%;
+        border: 15px solid var(--primary-color);
+      }
+    }
   }
 
   &__info-list {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    grid-template-columns: repeat(2, 290px);
+    margin-bottom: 20px;
   }
 
   &__info-items {
@@ -60,23 +83,6 @@
       height: 50px;
       background-color: var(--primary-color);
       border-radius: 50%;
-    }
-  }
-
-  &__woman-photo {
-    margin-left: 100px;
-    position: relative;
-    z-index: 1;
-
-    &::before {
-      content: '';
-      z-index: -1;
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      height: 100%;
-      width: 100%;
-      border: 15px solid var(--primary-color);
     }
   }
 }

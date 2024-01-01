@@ -28,11 +28,14 @@
   background-color: var(--secondary-color);
 
   &__container {
-    display: grid;
-    gap: 130px;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     color: var(--primary-text-color);
+
+    @include breakpoint($screen-lg) {
+      display: grid;
+      gap: 130px;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
   }
 
   &__welcome {
@@ -40,6 +43,7 @@
     align-items: center;
     font: 400 italic 20px/1.5 var(--secondary-font);
     margin-bottom: 15px;
+    color: var(--primary-text-color);
 
     &::before {
       background: var(--primary-color);
@@ -76,7 +80,8 @@
 
   &__book-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 
     & > li {
       display: block;

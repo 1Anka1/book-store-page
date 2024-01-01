@@ -65,13 +65,17 @@
 <style lang="scss">
 .chapter {
   background-color: var(--background-color);
+
   &__book-content-list {
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
+    grid-template-columns: repeat(1, 1fr);
 
+    @include breakpoint($screen-lg) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
   &__book-content-items {
     padding: 40px 50px;
     background-color: var(--primary-text-color);
@@ -111,10 +115,6 @@
       margin-right: 10px;
       background-color: var(--primary-color);
       border-radius: 50%;
-    }
-    & > span {
-      font-family: var(--primary-font);
-      color: var(--body-color);
     }
   }
 

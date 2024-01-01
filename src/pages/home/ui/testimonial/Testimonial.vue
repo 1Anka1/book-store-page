@@ -12,28 +12,30 @@
       </div>
       <div class="testimonial__block">
         <div v-show="isLoading">Loading...</div>
-        <div
-          v-for="testimonial in testimonialsStore.testimonialsReaders"
-          :key="testimonial.id"
-          class="testimonial__user-review"
-        >
-          <div class="testimonial__user">
-            <img
-              class="testimonial__user-photo"
-              :src="testimonial.avatar"
-              width="85"
-              height="85"
-              alt="User Photo"
-            />
-            <h3 class="testimonial__user-name">
-              {{ testimonial.first_name }} {{ testimonial.last_name }}
-            </h3>
+        <div class="testimonial__grid-container">
+          <div
+            v-for="testimonial in testimonialsStore.testimonialsReaders"
+            :key="testimonial.id"
+            class="testimonial__user-review"
+          >
+            <div class="testimonial__user">
+              <img
+                class="testimonial__user-photo"
+                :src="testimonial.avatar"
+                width="85"
+                height="85"
+                alt="User Photo"
+              />
+              <h3 class="testimonial__user-name">
+                {{ testimonial.first_name }} {{ testimonial.last_name }}
+              </h3>
+            </div>
+            <h3 class="testimonial__comment">“Awesome Impact”</h3>
+            <p class="testimonial__review">
+              All the Lorem Ipsum generators on the Internet tend to repeat willings predefined
+              chunks value.
+            </p>
           </div>
-          <h3 class="testimonial__comment">“Awesome Impact”</h3>
-          <p class="testimonial__review">
-            All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks
-            value.
-          </p>
         </div>
       </div>
     </div>
@@ -60,10 +62,12 @@ onBeforeMount(fetchTestimonials);
 <style lang="scss">
 .testimonial {
   &__container {
-    display: grid;
-    gap: 110px;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    @include breakpoint($screen-lg) {
+      display: grid;
+      gap: 110px;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
   }
 
   &__book-description {
@@ -91,16 +95,10 @@ onBeforeMount(fetchTestimonials);
     }
   }
 
-  &__block {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  .testimonial__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   &__user-photo {
@@ -109,7 +107,9 @@ onBeforeMount(fetchTestimonials);
 
   &__user-review {
     border-radius: 20px;
-    padding: 20px 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: var(--secondary-color);
   }
 
@@ -118,22 +118,22 @@ onBeforeMount(fetchTestimonials);
   }
 
   &__user {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 100px auto;
+    gap: 5px;
+    margin-bottom: 20px;
   }
 
   &__user-name {
-    margin-left: 5px;
-    font: 700 20px/1.5 var(--secondary-font);
+    font: 700 18px var(--secondary-font);
     color: var(--primary-text-color);
   }
 
   &__comment {
     color: var(--primary-text-color);
     font: 700 15px/1.5 var(--secondary-font);
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
 }
 </style>

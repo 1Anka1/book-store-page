@@ -2,8 +2,9 @@
   <section class="author-book section">
     <div class="author-book__container container">
       <Title center>Author’s Book Includes</Title>
-      <ul class="author-book__list">
-        <li class="author-book__item">
+
+      <div class="author-book__list">
+        <div class="author-book__item">
           <img
             src="/img/atomic-one-book.png"
             alt="Atomic One's Book Title"
@@ -27,8 +28,8 @@
             </ul>
             <Button outline>Order today</Button>
           </div>
-        </li>
-        <li class="author-book__item">
+        </div>
+        <div class="author-book__item">
           <img
             src="/img/light-front-page.png"
             alt="The Dark Light Title"
@@ -49,8 +50,8 @@
             </ul>
             <Button outline>Order today</Button>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -67,21 +68,20 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    @include breakpoint($screen-lg) {
+      display: flex;
+      gap: 20px;
+    }
   }
 
   &__item {
-    display: flex;
-    flex-basis: calc((100% - 60px) / 2);
-    margin-top: 30px;
-    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    margin: 20px;
+    gap: 20px;
 
     & > img {
       border: 8px solid var(--border-color-card);
-      margin-right: 50px;
     }
   }
 
@@ -122,11 +122,6 @@
       margin-right: 10px;
       background-color: var(--primary-color);
       border-radius: 50%;
-    }
-
-    & > span {
-      font: 400 19px/1.5 var(--primary-font);
-      color: var(--body-color);
     }
   }
 }

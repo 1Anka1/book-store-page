@@ -23,8 +23,12 @@
   &__container {
     display: grid;
     gap: 125px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
+
+    @include breakpoint($screen-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__advert-description {

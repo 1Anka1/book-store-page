@@ -63,8 +63,12 @@
 
   &__company-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
+    @include breakpoint($screen-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__company-items {

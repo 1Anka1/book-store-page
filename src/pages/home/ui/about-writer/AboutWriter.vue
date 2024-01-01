@@ -48,34 +48,46 @@
   background-color: var(--background-color);
 
   &__author-photo {
-    margin-right: 100px;
-    position: relative;
-    z-index: 1;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
 
-    &::before {
-      content: '';
-      z-index: -1;
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      height: 100%;
-      width: 100%;
-      border: 15px solid var(--primary-color);
+    @include breakpoint($screen-lg) {
+      margin-right: 100px;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        height: 100%;
+        width: 100%;
+        border: 15px solid var(--primary-color);
+      }
     }
   }
 
   &__container {
-    display: flex;
+    @include breakpoint($screen-md) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
   }
 
   &__author-details {
-    max-width: 600px;
+    @include breakpoint($screen-lg) {
+      max-width: 600px;
+    }
   }
 
   &__list-data {
     display: flex;
     align-items: center;
-    margin: 20px -20px 40px;
+    margin: 20px;
   }
 
   &__list-data-item {
