@@ -48,7 +48,6 @@ const onSubmit = handleSubmit((values) => {
   }
 
   &__description {
-    width: 500px;
     margin: 0 auto;
     margin-bottom: 30px;
   }

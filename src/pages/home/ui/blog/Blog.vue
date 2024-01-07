@@ -76,12 +76,18 @@
 .blog {
   background-color: var(--background-color);
   &__article-list {
-    display: flex;
-    margin: -30px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+
+    @include breakpoint($screen-md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__article-items {
-    margin: 30px;
+    display: grid;
+    place-items: center;
     background-color: var(--primary-text-color);
   }
 

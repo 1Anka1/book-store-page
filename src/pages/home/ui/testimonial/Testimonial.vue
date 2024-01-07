@@ -96,9 +96,16 @@ onBeforeMount(fetchTestimonials);
   }
 
   .testimonial__grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    margin-top: 20px;
+
+    @include breakpoint($screen-md) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
   }
 
   &__user-photo {

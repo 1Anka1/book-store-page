@@ -51,7 +51,7 @@
           <li>
             <a class="header__nav-link" href="#">Contact</a>
           </li>
-          <li class="header__nav-list-badge">
+          <li v-if="!isMenuOpen" class="header__nav-list-badge">
             <a href="#">
               <svg class="header__basket-icon" width="18" height="17">
                 <use href="@/assets/images/sprite.svg#basket"></use>

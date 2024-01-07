@@ -1,7 +1,7 @@
 <template>
   <section class="footer">
     <div class="footer__container container">
-      <div>
+      <div class="footer__container-icons-list">
         <div class="footer__container-list">
           <svg class="icon" width="25" height="28">
             <use href="@/assets/images/sprite.svg#page"></use>
@@ -114,37 +114,73 @@
 <style lang="scss">
 .footer {
   background-color: var(--secondary-color);
-  &__container {
+
+  &__container-icons-list {
     display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    margin-bottom: 20px;
+
+    @include breakpoint($screen-md) {
+      display: grid;
+    }
+
+    @include breakpoint($screen-lg) {
+      display: block;
+    }
   }
+
+  &__container {
+    @include breakpoint($screen-lg) {
+      display: flex;
+    }
+  }
+
   &__container-list {
     display: flex;
     margin-bottom: 20px;
     align-items: center;
     color: var(--secondary-color);
   }
+
   &__social-network-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 10px;
+
+    @include breakpoint($screen-lg) {
+      grid-template-columns: repeat(4, 3rem);
+    }
 
     & > li {
+      @include breakpoint($screen-lg) {
+        margin-right: 20px;
+      }
       border: 1px solid var(--primary-color);
     }
     & > li:not(:last-child) {
-      margin-right: 10px;
+      @include breakpoint($screen-lg) {
+        margin-right: 10px;
+      }
     }
   }
+
   &__wrapper:not(:first-child) {
     display: flex;
     margin-left: auto;
     gap: 50px;
   }
+
   &__list-item:not(:last-child) {
     margin-bottom: 15px;
   }
+
   &__title {
     margin-bottom: 20px;
     color: var(--primary-text-color);
   }
+
   &__header__nav-link {
     color: var(--light-color);
     transition: color 250ms var(--timing-function);
@@ -153,17 +189,20 @@
       color: var(--primary-text-color);
     }
   }
+
   &__address-list-link {
     font-weight: 700;
     font-family: var(--secondary-font);
     color: var(--primary-text-color);
   }
+
   &__address-list-link-info {
     font-weight: 400;
     font-family: var(--primary-font);
     color: var(--light-color);
   }
 }
+
 .caption--logo {
   color: var(--primary-text-color);
   font-size: 23px;

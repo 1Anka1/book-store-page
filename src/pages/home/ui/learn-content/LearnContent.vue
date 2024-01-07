@@ -33,16 +33,21 @@
 
 <style lang="scss">
 .learn-content {
-  @include breakpoint($screen-md) {
-    &__wrapper {
+  &__wrapper {
+    @include breakpoint($screen-md) {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 20px;
+    }
+    @include breakpoint($screen-lg) {
+      gap: 90px;
     }
   }
 
   &__woman-photo {
-    margin-left: 50px;
+    display: grid;
+    place-content: center;
 
     @include breakpoint($screen-lg) {
       position: relative;
@@ -52,11 +57,12 @@
         content: '';
         z-index: -1;
         position: absolute;
-        top: 50px;
-        left: 50px;
-        height: 100%;
-        width: 100%;
+        top: -50px;
+        left: -50px;
+        height: calc(100% + 20px);
+        width: calc(100% + 20px);
         border: 15px solid var(--primary-color);
+        box-sizing: border-box;
       }
     }
   }
