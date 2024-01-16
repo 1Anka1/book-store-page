@@ -1,49 +1,10 @@
 # book-store-page
 
-This template should help get you started developing with Vue 3 in Vite.
+My first project is an innovative book page developed using the Vue.js framework and the Pinia library. Leveraging Vue.js allowed for the creation of a dynamic and user-friendly interface, while Pinia seamlessly integrated to efficiently manage the state of data.
 
-## Recommended IDE Setup
+On the book page, users can discover and explore various books through an intuitive interface that responds to their interactions. Vue.js component system was employed to implement diverse elements on the page, including the display of book covers, descriptions, ratings, and interaction buttons.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+In addition, I ensured the project's adaptability by implementing responsive design techniques. This adaptation ensures a consistent and optimal user experience across various devices, including desktops, tablets, and smartphones. The combination of Vue.js, Pinia, and responsive design techniques resulted in a versatile and engaging book page that caters to users across different platforms.
 
 ### Design
 
